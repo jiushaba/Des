@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<padding android:left="10dip" android:top="3dip" android:right="10dip" android:bottom="3dip" /><!-- 主要内容的padding 文字距离上下左右的距离 -->
+	<corners android:radius="20dip"/><!-- 圆角的半径 -->
+	<solid android:color="#d4d4d4" /><!-- 没有描边的中间部分 -->
+</shape>

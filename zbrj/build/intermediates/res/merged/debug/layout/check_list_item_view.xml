@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_form_item" >
+
+    <TextView
+        android:id="@+id/check_list_item_label"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/border_weight"
+        android:background="@drawable/bg_connections_item"
+        android:gravity="left|center"
+        android:paddingLeft="30dp"
+        android:minWidth="60.0dip"
+        android:singleLine="true"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/font_large" />
+
+    <ImageView
+        android:id="@+id/check_list_item_status"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="@dimen/border_weight"
+        android:src="@drawable/check_icon" />
+
+</FrameLayout>

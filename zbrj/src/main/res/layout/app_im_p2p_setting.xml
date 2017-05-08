@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/setting"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <ScrollView
+        android:id="@+id/im_p2p_setting_SV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            android:paddingBottom="10dp" >
+
+            <!-- 新消息通知 -->
+
+            <RelativeLayout
+                android:id="@+id/im_p2p_setting_RL_newMsgNoti"
+                style="@style/more_bg_none" >
+
+                <TextView
+                    style="@style/more_item_title"
+                    android:text="@string/new_msg_noti" />
+
+                <ImageView
+                    android:id="@+id/im_p2p_setting_Image_newMsgNoti"
+                    style="@style/more_item_image_right"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/btn_check_off_normal" />
+            </RelativeLayout>
+            <!-- 置顶聊天 -->
+
+            <RelativeLayout
+                android:id="@+id/im_p2p_setting_RL_setTopChat"
+                style="@style/more_bg_middle" >
+
+                <TextView
+                    style="@style/more_item_title"
+                    android:text="@string/set_top_chat" />
+
+                <ImageView
+                    android:id="@+id/im_p2p_setting_Image_setTopChat"
+                    style="@style/more_item_image_right"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/btn_check_off_normal" />
+            </RelativeLayout>
+            <!-- 消息提示音 -->
+
+            <RelativeLayout
+                android:id="@+id/im_p2p_setting_RL_msgNotiSound"
+                style="@style/more_bg_bottom" >
+
+                <TextView
+                    style="@style/more_item_title"
+                    android:text="@string/msg_noti_sound" />
+
+                <ImageView
+                    android:id="@+id/im_p2p_setting_Image_msgNotiSound"
+                    style="@style/more_item_image_right"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/btn_check_off_normal" />
+            </RelativeLayout>
+            <!-- 清空聊天记录 -->
+
+            <RelativeLayout
+                android:id="@+id/im_p2p_setting_RL_clearAllMsgs"
+                style="@style/more_bg_top"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    style="@style/more_item_title"
+                    android:text="@string/clear_all_msgs" />
+            </RelativeLayout>
+
+            <LinearLayout style="@style/GroupMemBG" >
+
+                <com.lz.oncon.app.im.ui.view.MsgRoundAngleImageView
+                    android:id="@+id/im_p2p_setting_head"
+                    style="@style/head"
+                    android:clickable="true"
+                    android:onClick="onClick" />
+
+                <com.lz.oncon.widget.HeadImageView
+                    android:id="@+id/im_p2p_setting_add"
+                    style="@style/head"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:src="@drawable/icon_add" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

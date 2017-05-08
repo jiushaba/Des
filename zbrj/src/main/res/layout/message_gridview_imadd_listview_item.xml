@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="top|center_horizontal" >
+
+        <com.lz.oncon.widget.ImageViewButton
+            android:id="@+id/im_message__button_class"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/im_message__button_class_tv"
+        style="@style/ts14_aaaaaa_ww_wh"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+		android:id="@+id/editable_spinner_listitem_TV"
+		style="@style/ts20_black_mw_50h"
+		android:gravity="center_vertical"/>

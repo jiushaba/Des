@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView android:id="@+id/loc_offline_page_item_loc"
+        style="@style/ts16_grey_mw_wh"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="left|center_vertical"
+        android:text="北京市"
+        android:singleLine="true"/>
+
+</LinearLayout>

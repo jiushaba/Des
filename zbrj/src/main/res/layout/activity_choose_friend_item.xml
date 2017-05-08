@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/im_thread_list_item_bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@id/header"
+        layout="@layout/friend_list_item_section" />
+    <RelativeLayout
+        android:id="@+id/indexLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_title_bg"
+        android:paddingTop="3dip"
+        android:paddingLeft="29dip"
+        android:paddingBottom="3dip"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/text_first_char_hint"
+            style="@style/ts15_black_ww_wh"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+             >
+             
+            <CheckBox android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/checkbox"
+		        android:button="@null"
+		        android:checked="true"
+		        android:focusable="false"
+		        android:clickable="false"/>
+		        
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@id/icon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_toRightOf="@id/checkbox"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/avatar_img_loading"/>
+
+            <TextView
+                android:id="@id/name"
+                style="@style/ts16_black_white_ww_mh"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/icon"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

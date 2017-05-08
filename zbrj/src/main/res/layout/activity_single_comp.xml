@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityLinearLayout">
+    <!-- title -->
+    <include layout="@layout/activity_single_comp_title"/>
+    <!-- 视频列表 -->
+    <com.lb.zbrj.view.SingleCompView 
+        android:id="@+id/videoList"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+    <com.lb.zbrj.view.SingleCompTopView 
+        android:id="@+id/videoBroardList"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_weight="1" android:visibility="gone"
+        />
+    <!-- 控制按钮 -->
+    <LinearLayout android:id="@+id/mng_layout"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:id="@+id/back"
+            style="@style/ts16_black_mw_wh"
+            android:clickable="true" android:onClick="onClick"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/back"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_back_home"/>
+        <TextView android:id="@+id/take_part_in"
+            style="@style/ts16_black_mw_wh"
+            android:clickable="true" android:onClick="onClick"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/take_part_in"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_back_home"/>
+        <TextView android:id="@+id/rule"
+            style="@style/ts16_black_mw_wh"
+            android:clickable="true" android:onClick="onClick"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rule"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/btn_back_home"/>
+    </LinearLayout>
+</LinearLayout>

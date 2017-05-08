@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:layout_marginTop="11dp">
+	<TextView android:id="@+id/addmobile_textview_TV"
+	    style="@style/ts18_dadada_ww_wh"
+		android:minHeight="20dp"
+		android:paddingTop="2dp"
+		android:paddingBottom="2dp"
+		android:paddingLeft="2dp"
+		android:paddingRight="2dp"
+		android:text="添加"
+		android:background="@drawable/textview_dottedborder"
+		android:singleLine="true"
+		android:layout_centerVertical="true"
+		android:gravity="left|center_vertical"
+		/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:background="@drawable/corners_bg" >
+
+    <TextView
+        android:id="@+id/confirm_text"
+        style="@style/ts16_white_ww_wh"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="200dp"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="是否结束直播？" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+		<TextView
+		    android:id="@+id/btn_yes" 
+		    style="@style/ts16_white_ww_wh"
+		    android:text="@string/video_exist_save"
+		    android:background="@drawable/bg_corner_all_black7"
+		    android:textColor="@android:color/white"
+		    android:padding="5dp"
+		    />
+		
+		<TextView
+		    android:id="@+id/btn_no" 
+		    style="@style/ts16_white_ww_wh"
+		    android:text="@string/video_exist_nosave"
+		    android:background="@drawable/bg_corner_all_black7"
+		    android:textColor="@android:color/white"
+		    android:padding="5dp"
+		    android:layout_marginLeft="20dp"
+		    />
+		<TextView
+		    android:id="@+id/btn_cancel" 
+		    style="@style/ts16_white_ww_wh"
+		    android:text="@string/cancel"
+		    android:background="@drawable/bg_corner_all_black7"
+		    android:textColor="@android:color/white"
+		    android:padding="5dp"
+		     android:layout_marginLeft="20dp"
+		     android:singleLine="true"
+		    />	
+    </LinearLayout>
+
+</RelativeLayout>

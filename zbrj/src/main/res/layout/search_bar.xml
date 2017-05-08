@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/tbg1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+         android:id="@+id/search_word_rl">
+
+        <EditText
+            android:id="@+id/search_word"
+            style="@style/ts16_b3b3b3_mw_wh"
+            android:background="@drawable/tserch"
+            android:maxLength="15"
+            android:paddingLeft="35dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:textColor="@color/grey2" />
+        <TextView
+            android:id="@+id/search_word_tv"
+            style="@style/ts16_b3b3b3_mw_wh"
+            android:hint="@string/search_memo"
+            android:background="@drawable/tserch"          
+            android:paddingLeft="35dp"
+            android:paddingRight="30dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@id/search_word_rl"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/serch_ico" />
+
+    <ImageView
+        android:id="@+id/search_bar_cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@id/search_word_rl"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/error"
+        android:visibility="gone" />
+
+	</RelativeLayout>

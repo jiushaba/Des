@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout"
+    android:orientation="vertical"
+    tools:context=".BlackListActivity" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/blacklist"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <ListView
+        android:id="@+id/black_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

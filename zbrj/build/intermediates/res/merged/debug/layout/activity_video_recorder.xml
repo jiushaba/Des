@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+	<RelativeLayout
+	    android:id="@+id/videoViewlayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	   
+	</RelativeLayout> 
+	 <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <com.danmu.widget.DanmuSurfaceView
+	         android:id="@+id/video_danmaku"
+	         android:layout_width="match_parent"
+	  		 android:layout_height="match_parent"
+	        >
+       	</com.danmu.widget.DanmuSurfaceView>
+     	 <com.lb.video.view.VideoTitleLayout
+      			android:id="@+id/video_title_bar"
+      			android:layout_width="match_parent"
+      			android:layout_height="wrap_content"
+  		 />
+       	<include 
+	    android:id="@+id/pop_confirm_window_hide"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    layout="@layout/pop_confirm_window"
+	    android:layout_centerHorizontal="true"
+	   	android:layout_alignParentBottom="true"
+	   	android:layout_marginBottom="90dp"
+	    android:visibility="invisible"/>
+	</RelativeLayout>
+  	
+	
+	<com.lb.video.view.LiveControlLayout
+	    android:visibility="visible"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	 />
+	 
+	
+	<include
+	    android:id="@+id/video_recorder_start_layout" 
+	    layout="@layout/video_recorder_start_layout" 
+	 />
+	
+</FrameLayout>

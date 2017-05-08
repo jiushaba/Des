@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/im_thread_list_item_bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@id/header"
+        layout="@layout/friend_list_item_section" />
+    <RelativeLayout
+        android:id="@+id/indexLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/category_title_bg"
+        android:paddingTop="3dip"
+        android:paddingLeft="29dip"
+        android:paddingBottom="3dip"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/text_first_char_hint"
+            style="@style/ts15_black_ww_wh"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+             >
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@id/icon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/avatar_img_loading"/>
+
+            <TextView
+                android:id="@id/name"
+                style="@style/ts16_black_white_ww_mh"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/icon"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signatureLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:visibility="gone"
+             android:layout_weight="1"
+            >
+
+            <com.lz.oncon.widget.EllipsizeTextView
+                android:id="@+id/signatureTV"
+                style="@style/ts12_888888_ww_wh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/labelbg"
+                android:gravity="left|center"
+                android:padding="3dp"/>
+        </RelativeLayout>
+        
+        <ImageView 
+            android:id="@+id/isFriend"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:src="@drawable/ic_focus_eachother"
+            android:layout_gravity="center_vertical" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

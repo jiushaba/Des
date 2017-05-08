@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal"
+    android:background="#B2FFFFFF" >
+
+
+    <ImageView
+       android:id="@+id/video_btn_hide_danmu_list"
+        android:layout_width="24dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_shouqi" />
+	<include layout="@layout/linev"/>
+    <com.lb.video.widget.DanmuListView
+        android:id="@+id/danmu_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+		android:cacheColorHint="@android:color/transparent"
+		 android:divider="@color/c4"  
+		android:listSelector="@android:color/transparent"
+		android:dividerHeight="1dp"
+		android:footerDividersEnabled="true"
+        android:scrollbarFadeDuration="0" >
+    </com.lb.video.widget.DanmuListView>
+
+	<TextView
+	    android:id="@+id/danmu_list_view_empty"
+	    style="@style/ts20_black"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center"
+	    android:background="@android:color/transparent"
+	    android:text="没有数据" />
+     
+ </LinearLayout>

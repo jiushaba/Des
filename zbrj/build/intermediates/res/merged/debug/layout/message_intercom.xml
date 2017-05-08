@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/message_intercom_name"  xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ts16_white_ww_wh"
+    android:background="@drawable/im_message_sip_bg"/>

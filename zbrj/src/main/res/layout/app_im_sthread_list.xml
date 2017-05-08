@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+	
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        style="@style/title"
+        oncon:centerValue="@string/stranger"
+        oncon:leftImageSrc="@drawable/ic_back"
+        />
+
+    <LinearLayout
+        android:id="@+id/im_thread_list__Layout_warning_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/im_thread_list__Layout_warning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/warning_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/warningIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:src="@drawable/warning" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/warningIV"
+                android:orientation="vertical" >
+
+                <TextView style="@style/ts14_black_ww_wh"
+                    android:text="@string/im_warning_network_error"/>
+
+                <TextView style="@style/ts12_333333_ww_wh"
+                    android:text="@string/im_warning_network_check2"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.lz.oncon.app.im.ui.IMListView
+        android:id="@+id/im_thread_list_DLL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/im_thread_list__Layout_warning_2"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000"
+		android:divider="#d7d6d4"
+        android:dividerHeight="1px"
+        android:orientation="vertical" >
+    </com.lz.oncon.app.im.ui.IMListView>
+
+</RelativeLayout>

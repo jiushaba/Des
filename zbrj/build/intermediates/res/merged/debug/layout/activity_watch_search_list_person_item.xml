@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:id="@+id/indexLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="20dip"
+        android:paddingBottom="8dip"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/text_first_char_hint"
+            style="@style/ts16_black_ww_wh"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/user"
+            android:drawableLeft="@drawable/ic_search_user"
+            android:drawablePadding="5dp"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+        android:background="#f9f9f9"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@id/icon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/avatar_img_loading"/>
+
+            <TextView
+                android:id="@id/name"
+                style="@style/ts16_black_white_ww_wh"
+                android:layout_marginLeft="10.0dip"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"/>
+    </LinearLayout>
+
+</LinearLayout>

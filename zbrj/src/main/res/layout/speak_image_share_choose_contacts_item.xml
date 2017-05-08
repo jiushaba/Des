@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#e9e8e6"
+     >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="2.0dp"
+         >
+
+        <ImageView
+            android:id="@+id/choose_attention_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+           	android:layout_marginLeft="5dp"
+            android:src="@drawable/avatar_img_loading" />
+
+        <TextView
+            android:id="@+id/choose_attention_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+	
+    <CheckBox
+        android:id="@+id/choose_attention_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:button="@drawable/check_box" />
+    
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="header">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="name">false</item>
+    <item type="id" name="title"/>
+    <item type="id" name="expand"></item>
+    <item type="id" name="tag_adapter"/>
+    <item type="id" name="tag_onconid"/>
+    <item type="id" name="tag_position"/>
+</resources>

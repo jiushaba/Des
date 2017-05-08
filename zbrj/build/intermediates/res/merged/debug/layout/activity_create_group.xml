@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    <com.lz.oncon.widget.TitleView
+		android:id="@id/title" style="@style/title"
+		oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/create_group_title"/>
+    	
+	<RelativeLayout android:id="@+id/create_group_info_name_RL"
+		style="@style/more_bg_none"
+		android:clickable="true" android:onClick="onClick">
+		<TextView android:id="@+id/create_group_info_name_label"
+			style="@style/more_item_title_14_2"
+			android:duplicateParentState="false"
+			android:text="@string/group_info_name" />
+		<EditText android:id="@+id/create_group_info_name"
+		    style="@style/ts14_black_mw_wh"
+		    android:background="@color/transparent"
+		    android:gravity="right" android:singleLine="true"
+		    android:layout_marginLeft="35dp" android:layout_marginRight="10dp"
+		    android:hint="@string/please_enter_groupname"
+		    android:maxLength="20"
+			android:layout_toRightOf="@id/create_group_info_name_label"
+			android:duplicateParentState="true"/>
+	</RelativeLayout>
+		
+	<RelativeLayout android:id="@+id/create_group_info_memberNum_RL"
+		style="@style/more_bg_middle" 
+		android:clickable="true" android:onClick="onClick">
+		<TextView android:id="@+id/num_label"
+		    style="@style/more_item_title_14_2"
+			android:text="@string/group_info_memberNum" />
+		<TextView android:id="@+id/create_group_info_memberNum"
+		    style="@style/more_item_value_2"
+		    android:layout_toRightOf="@id/num_label"
+			android:hint="@string/please_enter_groupsize"/>
+	</RelativeLayout>
+		
+	<RelativeLayout android:id="@+id/create_group_info_kind_RL"
+		style="@style/more_bg_middle"
+	    android:clickable="true" android:onClick="onClick">
+		<TextView android:id="@+id/kind_label"
+		    style="@style/more_item_title_14_2"
+			android:text="@string/group_info_kind" />
+		<TextView android:id="@+id/create_group_info_kind_name"
+		    style="@style/more_item_value_2"
+			android:hint="@string/please_enter_groupkind"
+			android:layout_toRightOf="@id/kind_label"/>
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/create_group_info_local_RL"
+		style="@style/more_bg_bottom" 
+		android:clickable="true" android:onClick="onClick">
+		<TextView android:id="@+id/local_label"
+		    style="@style/more_item_title_14_2"
+			android:text="@string/group_info_local" />
+		<TextView android:id="@+id/create_group_info_local_name"
+		    style="@style/more_item_value_2"
+			android:hint="@string/please_enter_grouploc"
+			android:layout_toRightOf="@id/local_label"/>
+	</RelativeLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal" android:layout_marginTop="15dp"
+		android:gravity="center" android:visibility="gone">
+		<ImageView android:id="@+id/create_group_info_argBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/arg_picked"/>
+		<TextView style="@style/ts12_grey_ww_wh"
+			android:layout_marginLeft="5dp"
+			android:text="已阅读并同意"/>
+		<TextView style="@style/ts12_sky_blue_ww_wh"
+			android:layout_marginLeft="5dp"
+			android:text="使用条款及隐私政策"/>
+	</LinearLayout>
+	<TextView android:id="@+id/group_info_join_oper"
+	    style="@style/EnterButton"
+		android:text="@string/create_group_submit"
+		android:clickable="true" android:onClick="onClick"/>
+</LinearLayout>

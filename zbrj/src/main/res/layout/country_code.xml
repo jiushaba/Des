@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/country_code_select"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <com.lz.oncon.widget.SearchBar android:id="@+id/search_bar"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+   	<RelativeLayout
+		android:id="@+id/phoneContactLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+            <ListView
+                android:id="@+id/countryLV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="#c3c3c3"
+                android:dividerHeight="1dp"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none" />
+
+            <com.lz.oncon.widget.MyLetterListView
+                android:id="@+id/countryMLLV"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#40000000" />
+        </RelativeLayout>
+
+</LinearLayout>

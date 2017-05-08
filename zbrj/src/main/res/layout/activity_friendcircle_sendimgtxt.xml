@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friendcircle_sendtxt_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/friendcircle_sendtxt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue=""
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightValue="@string/fc_comment_send" />
+
+    <EditText
+        android:id="@+id/friendcircle_sendtxt_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/msg_input"
+        android:gravity="center_vertical"
+        android:layout_margin="10dip"
+        android:hint="@string/fc_moment_to_say"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:maxHeight="200dip" />
+    
+    <GridView
+        android:id="@+id/friendcircle_sendtxt_gridview"
+        android:layout_width="265dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:columnWidth="60dp"
+        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+        android:listSelector="@android:color/white"
+        android:numColumns="4"
+        android:padding="@dimen/image_thumbnail_spacing"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/image_thumbnail_spacing" />
+
+</LinearLayout>

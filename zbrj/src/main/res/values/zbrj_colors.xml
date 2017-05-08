@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+    <color name="default_text">#ff454545</color>
+    
+    <color name="c1">#FFFFFF</color><!-- （白色） -->
+    <color name="c2">#F3F3F7</color><!-- （浅背景） -->
+    <color name="c3">#B60000</color><!-- （炫播红） -->
+    <color name="c4">#CFCFD2</color><!-- （分割线） -->
+    <color name="c5">#000000</color><!-- （黑色） -->
+    <color name="c6">#F43531</color><!-- （标准红） -->
+    <color name="c7">#E4E4E4</color><!-- （浅灰） -->
+    <color name="c8">#706F6F</color><!-- （深灰） -->
+    <color name="c9">#d45350</color>
+    <color name="c10">#b1b1b1</color>
+    <color name="c11">#FDDE6F</color>
+    
+    <color name="watch_list_video_bg_1">#4DFFFFFF</color><!-- 白底图 颜色：C1，不透明度30% -->
+    <color name="watch_list_video_bg_2">#0D000000</color><!-- 灰底图 颜色：C5，不透明度5% -->
+    <color name="watch_list_user_bg_1">#26000000</color><!-- 用户浅灰底 颜色：C5，不透明度15% -->
+    <color name="watch_list_user_bg_2">#59000000</color><!-- 用户深灰底 颜色：C5，不透明度35% -->
+    <color name="peachy">#f3765c</color><!-- 蜜桃粉 -->
+</resources>

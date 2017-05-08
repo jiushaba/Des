@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/enter_verifycode"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightValue="@string/next" />
+    <!-- memo -->
+
+    <LinearLayout
+        android:id="@+id/memo_LL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/memo"
+            style="@style/ts18_darker_gray_ww_wh"
+            android:text="@string/have_send" />
+
+        <TextView
+            android:id="@+id/memo1"
+            style="@style/ts18_seagreen_ww_wh"
+            android:text="@string/verifycode_sms" />
+
+        <TextView
+            android:id="@+id/memo2"
+            style="@style/ts18_darker_gray_ww_wh"
+            android:text="@string/to_mobile" />
+    </LinearLayout>
+    <!-- 手机号 -->
+
+    <TextView
+        android:id="@+id/mobile_TV"
+        style="@style/ts18_black_mw_wh"
+        android:layout_below="@id/memo_LL"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="+86 13681387004"
+        android:textStyle="bold" />
+    <!-- 验证码 -->
+
+    <EditText
+        android:id="@+id/check_code_ET"
+        style="@style/ts24_black_170w_50h"
+        android:layout_below="@id/mobile_TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:digits="1234567890"
+        android:hint="@string/please_enter_verifycode"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/password_ET"
+        style="@style/ts24_black_170w_50h"
+        android:layout_below="@id/check_code_ET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+        android:hint="@string/login_input_pwdhint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+    <!-- 重发按钮 -->
+
+    <TextView
+        android:id="@+id/resend"
+        style="@style/ts16_black_ww_40h"
+        android:layout_below="@id/password_ET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_but_send_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/regain_verifycode"
+        android:visibility="gone" />
+    <!-- 重发提示 -->
+
+    <TextView
+        android:id="@+id/resend_memo"
+        style="@style/ts16_darker_gray_ww_wh"
+        android:layout_below="@id/resend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

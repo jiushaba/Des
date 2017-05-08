@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center">
+    
+    <LinearLayout android:orientation="vertical"
+        android:background="@drawable/bg_watch_list_comp_video_item"
+        android:layout_width="@dimen/comp_video_item_width" android:layout_height="wrap_content">
+	    <ImageView android:id="@+id/videoImage"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:scaleType="fitXY"
+			android:src="@drawable/defaultpic"/>
+	    <include layout="@layout/line"/>
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:padding="3dp">
+	        <TextView android:id="@+id/watchersNum"
+	            style="@style/ts12_black_mw_wh"
+	            android:layout_weight="1"
+	            android:drawablePadding="3dp" android:drawableLeft="@drawable/left"
+	            android:text="32万"/>
+	        <TextView android:id="@+id/upNum"
+	            style="@style/ts12_black_mw_wh"
+	            android:layout_weight="1"
+	            android:drawablePadding="3dp" android:drawableLeft="@drawable/left"
+	            android:text="1.2万"/>
+	    </LinearLayout>
+	    <include layout="@layout/line"/>
+	    <TextView android:id="@+id/title"
+	        style="@style/ts14_black_mw_wh"
+	        android:gravity="center"
+	        android:padding="3dp"
+	        android:text="剑灵专业COS"/>
+    </LinearLayout>
+</LinearLayout>

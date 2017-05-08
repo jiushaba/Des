@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_title_RL"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/peachy" >
+    
+    <LinearLayout android:id="@+id/common_title_TV_left"
+        style="@style/common_title_IV_left"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:onClick="onClick">
+        
+        <TextView
+	        android:id="@+id/common_title_TV_left_tv"
+	        style="@style/common_title_IV_left"
+	        android:padding="0dp"
+	        android:visibility="gone"/>
+        
+        <ImageView
+	        android:id="@+id/common_title_TV_left_iv"
+	        style="@style/common_title_IV_left"
+	        android:padding="0dp"
+	        android:src="@drawable/ic_back"
+	        android:visibility="visible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/common_title_TV_right"
+        style="@style/common_title_TV_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <LinearLayout
+        android:id="@+id/common_title_TV_center_linear"
+        style="@style/common_title_TV_center"
+        android:layout_width="match_parent"
+       	android:layout_toRightOf="@+id/common_title_TV_left"
+       	android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/common_title_TV_right"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:gravity="left"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/common_title_TV_center"
+            style="@style/ts16_white_ww_wh"
+            android:ellipsize="end"
+            android:maxWidth="180dp"
+            android:singleLine="true"/>
+        
+        <ImageView
+            android:id="@+id/common_title_IV_center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/new_dot"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>

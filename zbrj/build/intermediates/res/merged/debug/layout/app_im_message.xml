@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    style="@style/ActivityLinearLayout" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        style="@style/title"
+        oncon:leftImageSrc="@drawable/ic_back"
+        />
+
+    <com.lz.oncon.app.im.ui.common.IMMessageInputBar
+        android:id="@+id/im_message__input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <RelativeLayout
+        android:id="@+id/im_message_circle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+           >
+
+            <LinearLayout
+                android:id="@+id/im_message_circle_post"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/im_message_circle_post" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/im_message_circle_post"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="fill_parent"
+                android:background="@color/list_division"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <LinearLayout
+                android:id="@+id/im_message_circle_space"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/im_message_circle_space" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/im_message_circle_space"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="fill_parent"
+                android:background="@color/list_division"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp" />
+
+            <LinearLayout
+                android:id="@+id/im_message_circle_share"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/im_message_circle_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="@string/im_message_circle_share"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.lz.oncon.app.im.ui.common.IMMessageListView
+        android:id="@+id/im_message__list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/im_message__input_layout"
+        android:layout_below="@id/im_message_circle"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="normal" />
+
+
+    	<RelativeLayout
+            android:id="@+id/recording_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/recording_hint_bg"
+            android:padding="10dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/mic_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/record_animate_01" />
+
+            <TextView
+                android:id="@+id/recording_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mic_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="@string/move_up_to_cancel"
+                android:textSize="10sp" />
+        </RelativeLayout>
+</RelativeLayout>

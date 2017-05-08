@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="center_horizontal" android:background="#702e2e2e">
+	
+	<LinearLayout android:id="@+id/pop_layout" 
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:background="@android:color/white"
+    	android:gravity="center_horizontal"
+    	android:orientation="vertical"
+    	android:layout_alignParentBottom="true">
+		<TextView android:id="@+id/pop_title"
+		    style="@style/ts18_darker_gray_ww_mh" android:padding="5dp"
+            android:text="@string/select_coll_type" android:visibility="gone"/>
+		
+		<LinearLayout android:id="@+id/pop_btn_layout"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		android:gravity="center_horizontal"
+    		android:orientation="vertical"/>
+		<TextView android:id="@+id/btn_cancel"
+		    android:gravity="center"
+       		style="@style/ts18_darker_gray_mw_mh"
+       		android:text="@string/cancel"
+       		android:background="@drawable/btn_popwindow"/>
+	</LinearLayout>
+</RelativeLayout>

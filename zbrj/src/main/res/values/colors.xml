@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="info_progress_bg">#55000000</color> <!--  -->
+    <color name="new_attention_bg">#bed5e7</color> <!-- 绿色 -->
+    <color name="green">#008000</color> <!-- 绿色 -->
+    <color name="attention_invite">#b5cad6</color> <!-- 绿色 -->
+    <color name="lightyellow">#FFFFE0</color>
+    <!-- 亮黄色 -->
+    <color name="yellow">#FFFF00</color>
+    <!-- 黄色 -->
+    <color name="bisque">#FFE4C4</color>
+    <!-- 桔黄色 -->
+    <color name="gold">#FFD700</color>
+    <!-- 金色 -->
+    <color name="orange2">#FFA500</color>
+    <!-- 橙色 -->
+    <color name="reg_enterprise_status_color">#006b24</color>
+    <color name="rgb_bg">#ffffff</color>
+    <color name="list_item_pressedbg">#0374ed</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="black">#000000</color> <!-- 黑色 -->
+    <color name="whitesmoke">#F5F5F5</color> <!-- 白色 -->
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="sms_bg">#0073de</color>
+    <color name="rhtx_purple">#ff704881</color>
+    <color name="grey">#ff919291</color>
+    <color name="grey2">#696969</color>
+    <color name="grey3">#999999</color>
+    <color name="red">#FF0000</color> <!-- 红色 -->
+    <color name="recents_secondary_unfocused">#ff7c7c7c</color>
+    <color name="call_screen_general_bg">#ff8b8a8a</color>
+    <color name="incall_textConnected">#ff99ce3f</color>
+    <color name="incall_textEnded">#ffff6072</color>
+    <color name="call_quality_info">#ffc8b3da</color>
+    <color name="new_big_brief_bg">#AA808080</color> <!-- 半透明灰色 -->
+    <color name="publisher_bg">#ff2d2e35</color>
+    <color name="weibo_bindphone_bg">#eaeaea</color> <!-- 微博绑定手机背景色 -->
+    <color name="aquamarine">#7FFFD4</color> <!-- 碧绿色 -->
+    <color name="chartreuse">#7FFF00</color> <!-- 黄绿色 -->
+    <color name="lawngreen">#7CFC00</color> <!-- 草绿色 -->
+    <color name="mediumaquamarine">#66CDAA</color> <!-- 中绿色 -->
+    <color name="mediumturquoise">#48D1CC</color> <!-- 中绿宝石 -->
+    <color name="turquoise">#40E0D0</color> <!-- 青绿色 -->
+    <color name="limegreen">#32CD32</color> <!-- 橙绿色 -->
+    <color name="seagreen">#2E8B57</color> <!-- 海绿色 -->
+    <color name="forestgreen">#228B22</color> <!-- 森林绿 -->
+    <color name="aqua">#00FFFF</color> <!-- 浅绿色 -->
+    <color name="springgreen">#00FF7F</color> <!-- 春绿色 -->
+    <color name="mediumspringgreen">#00FA9A</color> <!-- 中春绿色 -->
+    <color name="darkturquoise">#00CED1</color> <!-- 暗宝石绿 -->
+    <color name="bbbbbb">#bbbbbb</color>
+    <color name="im_send">#666666</color> <!-- im 送达的颜色 -->
+    <color name="im_noread">#009aff</color> <!-- im 未读的颜色 -->
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="text_button">#ff41484f</color>
+    <color name="text_button_disabled">#ffa6b3bf</color>
+    <color name="text_button_selected">#ff41484f</color>
+    <color name="text_button_over">#ffcf4c29</color>
+    <color name="enter_validate_picbg">#afafaf</color>
+    <color name="half_transparent">#90000000</color>
+    <color name="gray">#eeeff4</color>
+    <color name="gray2">#cccccc</color>
+    <color name="gray_publicaccount">#e7eaee</color>
+    <color name="appgray">#ededed</color>
+    <color name="sky_blue">#2c53c8</color>
+    <color name="navpage">#ffe1e0de</color>
+    <color name="publicacc_sel_bg">#cacfd5</color>
+    <color name="publicacc_sel_text">#494949</color>
+    <color name="publicacc_nor_text">#6e6e6e</color>
+    <color name="blue">#ff58c5c7</color>
+    <color name="im_thread_list_item_topchat_bg">#e8f1f4</color>
+    <color name="public_account_bg">#292c2d</color>
+    <color name="list_division">#e0e0e0</color>
+    <color name="title_bg_color">#0c8c94</color>
+    <color name="friendc_divider_color"> #d7d6d4</color>
+    <color name="friendc_textlink_color"> #647593</color>
+    <color name="listitem_black">#ff000000</color>
+    <color name="transparent_background">#00000000</color>
+    
+    <!--<color name="gray_c2">#F3F3F7</color>-->
+    <!--<color name="red_c3">#B60000</color>-->
+    <!--<color name="gray_c4">#CFCFD2</color>-->
+    <!--<color name="red_c6">#F43531</color>-->
+	<!--<color name="gray_c7">#E4E4E4</color>-->
+    <!--<color name="gray_c8">#706F6F</color>-->
+    
+    
+    <!-- connections -->
+    <color name="border">#ffcecece</color>
+    <color name="bg_form_item_pressed">#ffcecece</color>
+    <color name="bg_top_tab">#ff028ce6</color>
+    <color name="font_gray">#ff858585</color>
+    <color name="font_content">#ff202020</color>
+    <color name="bg_btn_blue_normal">#ff02baff</color>
+    <color name="font_button_normal">#ff028ce6</color>
+    <color name="font_button_pressed">#ff80c5f2</color>
+    <color name="bg_light_gray">#fff6f6f6</color>
+    <color name="bg_btn_blue_pressed">#ff028ce6</color>
+    <color name="feed_comments_bg">#ffeeeeee</color>
+    <color name="font_clickable">#ff2f678b</color>
+    <item name="font_on_dark" type="color">@android:color/white</item>
+    <color name="font_verify">#ffffaf02</color>
+    <color name="bg_gray">#ffe1e1e1</color>
+    <item type="color" name="bg_page">@android:color/white</item>
+    <color name="font_red">#ffc22123</color>
+    <color name="bg_form_item_normal">@android:color/white</color>
+    <color name="font_label">#ff2c2c2c</color>
+    <color name="font_un_clickable">#ff757575</color>
+    <item type="drawable" name="transparent">#00000000</item>
+    <color name="bg_cover">#88333333</color>
+    <item type="color" name="pop_menu_item_normal">@color/bg_form_item_pressed</item>
+    <color name="pop_menu_item_pressed">#fff0f0f0</color>
+    <color name="form_item_lable_detail_txt_color">#ff555555</color>
+
+</resources>

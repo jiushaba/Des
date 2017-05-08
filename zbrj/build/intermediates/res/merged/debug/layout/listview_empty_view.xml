@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_to_refresh_list_empty"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/tips_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="10.0dip" >
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10.0dip"
+            android:indeterminateDrawable="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lineSpacingMultiplier="0.92"
+            android:text="@string/list_empty_text"
+            android:textColor="@color/font_gray"
+            android:textSize="@dimen/font_large" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/emptyIcon"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_above="@id/tips_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/no_result_icon" />
+
+</RelativeLayout>

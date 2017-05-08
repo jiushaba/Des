@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="45dp" android:layout_width="fill_parent" android:minWidth="60dp">
+
+	<TextView
+	    android:id="@+id/tab_tv"
+	    style="@style/ts20_black_ww_wh"
+	    android:layout_centerInParent="true"
+	    android:ellipsize="marquee"
+	    android:gravity="center"
+	   
+	    android:paddingLeft="7dp"
+	    android:paddingRight="7dp"
+	    android:singleLine="true"
+	     />
+	 <!-- android:minWidth="80dp" -->
+
+</RelativeLayout>

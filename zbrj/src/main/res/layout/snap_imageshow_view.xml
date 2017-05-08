@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.lz.oncon.app.im.ui.TouchView
+        android:id="@+id/imageshow_image" 
+  		android:layout_x="0dip"
+  		android:layout_y="0dip"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/myTime"
+            style="@style/ts24_FF0000_100w_30h"
+            android:layout_margin="30dp"
+            android:gravity="right"
+            android:text="8888"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageshow__progressbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_x="0dip"
+        android:layout_y="0dip"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </ProgressBar>
+    </LinearLayout>
+</AbsoluteLayout>

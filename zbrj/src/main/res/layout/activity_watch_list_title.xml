@@ -1,0 +1,76 @@
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@id/title"
+        android:layout_width="match_parent" android:layout_height="50dp"
+        android:background="@color/peachy">
+
+        <LinearLayout android:id="@+id/title_left_ll"
+            android:onClick="onClick" android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="2dp"
+             >
+ 		 <ImageView
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:src="@drawable/icon_tab_title_fensi" />
+ 		  <TextView
+	        android:id="@+id/title_left"
+	        style="@style/ts14_black_ww_wh"
+	        android:background="@null"
+	        android:gravity="bottom"
+	        android:layout_gravity="bottom"
+	        android:text="1231"/>
+
+ 		  <ImageView
+ 		      android:layout_width="7dp"
+ 		      android:layout_height="7dp"
+ 		      android:src="@drawable/ic_dot"
+ 		      android:layout_gravity="top"
+ 		      android:layout_marginTop="6dp"
+ 		      />
+
+		</LinearLayout>
+      
+       
+        
+        <ImageView 
+	        android:id="@+id/title_search"
+	        android:layout_width="30dp"
+	        android:layout_height="25dp"
+	        android:src="@drawable/ic_search_bar_white"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:paddingLeft="2.5dp"
+	        android:paddingRight="2.5dp"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+	        android:clickable="true" android:onClick="onClick"/>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:text="@string/app_name_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/app_name_2"/>
+        </LinearLayout>
+	    
+    </RelativeLayout>

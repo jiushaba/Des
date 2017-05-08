@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="50dip"
+    android:layout_height="wrap_content" >
+
+    <com.lz.oncon.widget.HeadImageView
+        android:id="@+id/groupsetting_item_ImageView_head"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="50dip"
+        android:maxWidth="50dip"
+        android:scaleType="fitXY"/>
+    
+    <ImageView android:id="@+id/role"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_owner"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_alignRight="@id/groupsetting_item_ImageView_head"
+        android:layout_alignBottom="@id/groupsetting_item_ImageView_head"/>
+
+    <ImageView
+        android:id="@+id/groupsetting_item_ImageView_close"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:src="@drawable/reddelete"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_below="@id/groupsetting_item_ImageView_head"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/groupsetting_item_TextView_name"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#939393" />
+
+</RelativeLayout>

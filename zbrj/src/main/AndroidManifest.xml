@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xuanbo.xuan"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16"
+        tools:overrideLibrary="com.umeng.socialize.evernote,com.umeng.socialize.pinterest" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+ <!-- QQ、QQ空间所需权限 -->
+   <!-- <uses-permission android:name="android.permission.GET_TASKS" />
+   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+   <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+     
+   -->
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <application
+        android:name="com.lz.oncon.application.MyApplication"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/ContentOverlay" >
+
+        <!-- weibo share start -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- weibo share end -->
+        <activity
+            android:name="com.lz.oncon.activity.UserGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.LocOfflineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlayTranslucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="calloncon" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lz.oncon.activity.TabMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlayTranslucent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.ImageFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.AddTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.UpdPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lb.zbrj.activity.PersonListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lz.oncon.activity.AlertActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NormalProgressDialog" />
+        <activity
+            android:name="com.lz.oncon.activity.HeadBigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HeadBigActivity_Theme" />
+        <activity
+            android:name="com.lz.oncon.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.xuanbo.xuan.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.PersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lb.zbrj.activity.PersonSetMemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lb.zbrj.activity.PersonSetSignActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lb.common.util.corpimage.CropImage"
+             android:configChanges="keyboard|keyboardHidden|orientation"
+              
+             />
+        <!-- 图片剪切 -->
+        <!-- app/im start -->
+        <activity
+            android:name="com.lz.oncon.app.im.contact.ContactMsgCenterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/ContentOverlayTranslucent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.ImageBatchShowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMMessageHistorySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.GifSHowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMSListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMMessageListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMP2PSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMNewMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMRecordThreadsSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucent" 
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMRecordSThreadsSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTranslucent" 
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.lz.oncon.app.im.ui.IMRecordThreadsDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新功能提醒 -->
+        <activity
+            android:name="com.lz.oncon.activity.NewFuncGuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+
+        <receiver android:name="com.lz.oncon.app.im.data.IMNotiReceiver" >
+            <intent-filter>
+                <action android:name="ONCON_IM_HEARTBEAT" />
+            </intent-filter>
+        </receiver>
+        <!-- receiver android:name="com.lz.oncon.app.im.data.NetworkManager" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                </action>
+            </intent-filter>
+        </receiver -->
+        <!-- app/im end -->
+        <!-- Boot Receiver start -->
+        <receiver android:name="com.lz.oncon.receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <!-- Boot Receiver end -->
+        <!-- 分享开始 -->
+        <activity
+            android:name="com.lz.oncon.activity.ShareTabSocialChooseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lz.oncon.activity.ShareEditContentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.lz.oncon.activity.ShareAllEdit"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- 分享结束 -->
+        <!-- 注册 start -->
+        <activity
+            android:name="com.lz.oncon.activity.RegisterActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.RegisterActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.RegisterActivity3"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+         <activity
+            android:name="com.lz.oncon.activity.RegisterAllActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lz.oncon.activity.SetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册 end -->
+        <!-- UUID -->
+        <service android:name="org.OpenUDID.OpenUDID_service" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <!-- 朋友圈 -->
+        <activity
+            android:name="com.lz.oncon.activity.friendcircle.FriendCircleActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.friendcircle.FriendCircleMessageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.friendcircle.FriendCircleMessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.fc.selectimage.FriendCicleSelectImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lz.oncon.activity.friendcircle.image.Fc_PicPreviewOrSelectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+       
+        <!-- 设置我的位置 -->
+        <activity
+            android:name="com.lz.oncon.activity.SettingAreaActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 通讯录黑名单 -->
+        <activity
+            android:name="com.lz.oncon.activity.BlackListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 保留消息 -->
+        <activity
+            android:name="com.lz.oncon.activity.RetainMsgActivity"
+            android:screenOrientation="portrait" />
+
+		<!-- 完善资料 -->
+		<activity
+		    android:name="com.lb.zbrj.activity.ConsummationInfoActivity"
+		    android:screenOrientation="portrait"/>
+
+      
+        <!-- 展示/添加个人标签 -->
+        <activity
+            android:name="com.lz.oncon.activity.ShowTagActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.lz.oncon.activity.DisturbOpenOrCloseSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.picker" />
+        
+        <activity
+            android:name="com.lz.oncon.activity.BaiduMapActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.WatchListActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation"
+            android:launchMode="singleInstance"/>
+        
+        <activity
+            android:name="com.lb.zbrj.activity.WatchListSearchActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.SingleCompActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.PrivateConfigActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.FansListActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lb.zbrj.activity.FocusListActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.lz.oncon.activity.friendcircle.FCMsgHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lb.zbrj.activity.PortocalActivity"
+             android:screenOrientation="portrait"
+            />
+	<!-- video player config -->
+		<activity 
+		    android:name="com.lb.video.activity.RecordActivity"
+		    android:screenOrientation="landscape"
+		    android:configChanges="keyboardHidden|orientation|screenSize"
+		    > 
+		</activity>
+		<activity android:name="com.lb.video.activity.VideoPlayerActivity"
+	       android:configChanges="keyboardHidden|orientation|screenSize"
+	       android:screenOrientation="landscape" 
+	    >
+	    </activity>
+	    
+		 <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1104729917" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- end 腾讯 -->
+        
+	     <service android:name="org.videolan.vlc.audio.AudioService" />
+	        <receiver android:name="org.videolan.vlc.PhoneStateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+       
+        <receiver android:name="org.videolan.vlc.RemoteControlClientReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver> 
+        <!-- video player config -->
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="zhiboriji#zhiboriji" />
+		<!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55b4e6e367e58e9429005b61" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="AeE0MUNBaewDPRPoa6BLrcMc" />
+        
+    </application>
+
+</manifest>

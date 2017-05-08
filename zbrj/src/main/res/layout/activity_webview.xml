@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+	style="@style/ActivityLinearLayout">
+    <!-- 标题栏 -->
+	<com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/btn_wb_back" oncon:rightImageSrc="@drawable/btn_back_home"/>
+	<ProgressBar android:id="@+id/pbar" android:layout_width="fill_parent"
+		android:layout_height="4dip"
+		style="?android:attr/progressBarStyleHorizontal" android:max="100"
+		android:progress="0" />
+	<!-- webview -->
+	<com.lz.oncon.widget.WebViewUI android:id="@+id/webview" 
+	    android:layout_width="fill_parent" android:layout_height="fill_parent"/>
+</LinearLayout>

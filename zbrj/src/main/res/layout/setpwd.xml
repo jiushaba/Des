@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    	<!-- 标题栏 -->
+    	<!-- android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" -->
+		<com.lz.oncon.widget.TitleView
+			android:id="@id/title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+			oncon:centerValue="设置密码" oncon:rightImageSrc="@drawable/ic_finish"/>
+		<!-- 提示 -->
+		<TextView android:id="@+id/memo_TV" android:layout_below="@id/title"
+		    style="@style/ts18_black_mw_wh"
+		    android:layout_marginTop="20dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	        android:text="为了您下次能够顺利登录直播日记，在退出前，请为您的直播日记帐号先设置一个登录密码。"/>
+		<!-- 密码 -->
+		<RelativeLayout android:id="@+id/newpwd_RL" style="@style/more_bg_top" android:layout_height="60dp"
+		    android:layout_below="@id/memo_TV">
+		    <TextView android:id="@+id/newpwd_TV" style="@style/ts20_black_85w_50h"
+		        android:text="密码" />
+		    <EditText android:id="@+id/newpwd_ET" style="@style/ts20_black_mw_50h"
+		        android:layout_toRightOf="@id/newpwd_TV" android:background="@null"
+		        android:inputType="textPassword" android:maxLength="20" 
+	    		android:hint="请设置登录密码" android:singleLine="true" android:imeOptions="actionDone"
+	    		android:layout_marginLeft="10dp"/>
+		</RelativeLayout>
+		<!-- 确认密码 -->
+		<RelativeLayout android:id="@+id/confirmpwd_RL" style="@style/more_bg_bottom" android:layout_height="60dp"
+		    android:layout_below="@id/newpwd_RL">
+		    <TextView android:id="@+id/confirmpwd_TV" style="@style/ts20_black_85w_50h"
+		        android:text="确认密码"/>
+		    <EditText android:id="@+id/confirmpwd_ET" style="@style/ts20_black_mw_50h"
+		        android:layout_toRightOf="@id/confirmpwd_TV" android:background="@null"
+	    		android:inputType="textPassword" android:maxLength="20"
+	    		android:hint="请再次填入" android:singleLine="true" android:imeOptions="actionDone"
+				android:layout_marginLeft="10dp"/>
+		</RelativeLayout>
+</RelativeLayout>

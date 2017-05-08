@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <!--
+     the double FrameLayout is necessary here to do cropping on the bottom right
+     (which requires the surface not be centered), while keeping the result centered
+    -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false" >
+
+        <FrameLayout
+            android:id="@+id/player_surface_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="clip_horizontal|clip_vertical" >
+            <com.lb.video.view.VideoplaySurfaceView
+                android:id="@+id/player_surface"
+                android:layout_width="1dp"
+                android:layout_height="1dp" />
+
+            <SurfaceView
+                android:id="@+id/subtitles_surface"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:visibility="invisible" />
+            
+			<com.danmu.widget.DanmuSurfaceView
+                    android:id="@+id/player_danmaku"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"/>
+        </FrameLayout>
+    </FrameLayout>
+	 <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       		
+             <TextView
+	          android:id="@+id/player_blocked"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:background="#000000"
+	          android:text="" />
+             <include
+            android:id="@+id/video_title_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            layout="@layout/video_title_bar" />
+</RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+         
+         
+         <TextView
+            android:id="@+id/player_overlay_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/video_menu_background"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+        
+        <RelativeLayout
+            android:id="@+id/progress_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" 
+            android:layout_above="@+id/video_stat_layout">
+       		 <include
+            android:id="@+id/video_title_control_layout"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            layout="@layout/video_title_control" />
+		 	<include 
+            android:layout_alignParentBottom="true"
+            layout="@layout/video_player_control_layout"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+            />
+       
+        </RelativeLayout>
+         <include 
+            android:id="@+id/video_stat_layout"
+            android:layout_alignParentBottom="true"
+            layout="@layout/video_stat_bar"
+            android:layout_width="match_parent"
+    		android:layout_height="26dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

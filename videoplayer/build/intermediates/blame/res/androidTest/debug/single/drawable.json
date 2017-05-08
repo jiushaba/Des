@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\po_vlc_seekbar.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\bundles\\debug\\res\\drawable\\po_vlc_seekbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_val.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_bg.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\seekbar_vlc_thumb.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Des\\videoplayer\\build\\intermediates\\bundles\\debug\\res\\drawable\\seekbar_vlc_thumb.xml"
+    }
+]

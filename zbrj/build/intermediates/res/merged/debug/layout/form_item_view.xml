@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_connections_item"
+    android:clickable="true"
+    android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/form_item_view_top_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <include layout="@layout/line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/height_form_item"
+            android:orientation="horizontal"
+            android:padding="18.0dip" >
+
+            <TextView
+                android:id="@+id/form_item_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="10.0dip"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3.0dip"
+                android:maxLines="2"
+                android:maxWidth="200.0dip"
+                android:minWidth="50.0dip"
+                android:textColor="@color/font_label"
+                android:textSize="@dimen/font_large" />
+            
+            <ImageView
+                android:id="@+id/form_item_view_arrow"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10.0dip"
+                android:src="@drawable/group_item_arrow"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/form_item_view_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_marginTop="12.0dip"
+                android:layout_toRightOf="@id/form_item_view_label"
+                android:layout_toLeftOf="@id/form_item_view_arrow"
+                android:background="@drawable/transparent"   
+                android:ellipsize="end"
+                android:gravity="bottom|right|center"
+                android:maxLines="2"
+                android:textColor="@color/font_clickable"
+                android:textColorHint="@color/font_un_clickable"
+                android:textSize="@dimen/font_normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/form_item_view_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <include layout="@layout/line" />
+        </LinearLayout>
+</LinearLayout>

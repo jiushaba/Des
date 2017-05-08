@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/im_changename_TitleView_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/group_modify_title"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightImageSrc="@drawable/ic_finish" />
+
+    <EditText
+        android:id="@+id/im_changename_EditText_text"
+        style="@style/updpwd_oldpwd"
+    	android:layout_centerHorizontal="true"
+        android:layout_below="@+id/im_changename_TitleView_title"
+        android:imeOptions="actionDone"
+        android:maxLength="20"
+        android:singleLine="true" />
+
+</RelativeLayout>

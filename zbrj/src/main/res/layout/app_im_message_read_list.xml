@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+
+    <com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/message_received_list"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/im_group_setting_Layout_title"
+        android:id="@+id/sv">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            android:paddingBottom="10dp">
+            
+            <TextView android:id="@+id/noread_label" style="@style/ts18_black_ww_wh"
+                android:text="未读"
+                android:layout_marginLeft="10dp" android:layout_marginTop="10dp"/>
+            
+            <GridView
+	        	android:id="@+id/noread_ids"
+	        	style="@style/GroupMemBG"
+	            android:cacheColorHint="@android:color/transparent"
+	            android:horizontalSpacing="10dp"
+	            android:listSelector="@android:color/transparent"
+	            android:numColumns="4"
+	            android:verticalSpacing="10dp"/>
+            
+            <TextView android:id="@+id/read_label" style="@style/ts18_black_ww_wh"
+                android:text="已读"
+                android:layout_marginLeft="10dp" android:layout_marginTop="10dp"/>
+			
+            <GridView
+	        	android:id="@+id/read_ids"
+	        	style="@style/GroupMemBG"
+	            android:cacheColorHint="@android:color/transparent"
+	            android:horizontalSpacing="10dp"
+	            android:listSelector="@android:color/transparent"
+	            android:numColumns="4"
+	            android:verticalSpacing="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

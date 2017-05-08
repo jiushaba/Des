@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout"
+    android:background="@android:color/transparent">
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        style="@style/title"
+        oncon:leftImageSrc="@drawable/ic_back"/>
+
+ 
+     <View
+        android:id="@+id/im_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:background="@color/half_transparent" >
+    </View>
+   <ListView
+        android:id="@+id/im_thread_list_DLL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:cacheColorHint="#00000000"
+        android:divider="#d7d6d4"
+        android:dividerHeight="1px"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:scrollbars="none" android:visibility="gone">
+    </ListView>
+</RelativeLayout>

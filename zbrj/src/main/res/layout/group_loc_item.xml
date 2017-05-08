@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="55dp" 
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+    <ImageView android:id="@+id/group_loc_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/loc_icon"/>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="55dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/group_loc_item_img"
+	    android:orientation="vertical">
+	    <TextView android:id="@+id/group_loc_item_name"
+	        style="@style/ts16_black_mw_0h"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="数码银座"/>
+	    <TextView android:id="@+id/group_loc_item_addr"
+	        style="@style/ts12_aaaaaa_mw_0h"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="北京市海淀区中关村南大街2号"/>
+	</LinearLayout>
+</RelativeLayout>

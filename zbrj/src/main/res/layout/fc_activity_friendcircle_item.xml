@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+    <TextView android:id="@+id/month_v"
+        style="@style/ts20_black_ww_wh"
+        android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+        android:text="3月"/>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dip" >
+
+    <com.lz.oncon.widget.HeadImageView
+        android:id="@+id/fc_item_avatar"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar_img_loading"
+        oncon:roundHeight="2dp"
+        oncon:roundWidth="2dp" 
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fc_item_avatar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fc_item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" 
+                android:visibility="gone"/>
+            
+            <TextView
+                android:id="@+id/fc_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+            
+            <TextView
+                android:id="@+id/fc_item_title"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/share_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/fc_share_string"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fc_share_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fc_item_txtContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:autoLink="all"
+            android:textColorLink="@color/friendc_textlink_color"
+            android:padding="2dp"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp" 
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:orientation="horizontal">
+                <ImageView
+	        		android:id="@+id/fc_item_typeview"
+	        		android:layout_width="30dp"
+	        		android:layout_height="30dp"
+	        		android:scaleType="fitXY"
+	        		android:src="@drawable/ic_person_video"/>
+	            
+	            <ImageView
+	        		android:id="@+id/fc_item_videoview"
+	        		android:layout_width="match_parent"
+	        		android:layout_height="match_parent"
+	        		android:scaleType="fitXY"
+	        		android:layout_marginLeft="10dp"
+	        		android:src="@drawable/defaultpic"/>
+            </LinearLayout>
+            
+            <GridView
+                android:id="@+id/fc_item_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+                android:numColumns="3"
+                android:padding="@dimen/image_thumbnail_spacing"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/image_thumbnail_spacing" 
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fc_item_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_person_del" />
+
+            <TextView
+                android:id="@+id/fc_item_commentANDup_popup"
+                android:layout_width="25dip"
+                android:layout_height="18dip"
+                android:layout_toLeftOf="@id/fc_item_delete"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fc_comment_up" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fc_item_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/fc_item_up_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/fc_item_comment_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/meaasge_domain_follownum"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/fc_mydomain_attrntion"
+        android:textColor="#000000"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/fc_mydomain_attrntion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="18dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/fc_mydomain_follow"
+        android:textColor="#000000"
+        android:textSize="18dip" />
+
+    <TextView
+        android:id="@+id/fc_mydomain_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="18dip" />
+
+</LinearLayout>

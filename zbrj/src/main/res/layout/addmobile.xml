@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    	<!-- 标题栏 -->
+		<com.lz.oncon.widget.TitleView
+			android:id="@+id/addmobile_title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+			oncon:centerValue="增加手机号" oncon:rightImageSrc="@drawable/ic_finish"/>
+		<LinearLayout android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_below="@id/addmobile_title"
+		    android:orientation="vertical" android:layout_marginTop="25dip">
+			<EditText
+			    android:id="@+id/addtag_ET_tag"
+			    android:layout_width="256dp"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/input"
+			    android:layout_marginTop="7dp"
+			    android:paddingLeft="10dp"
+			    android:paddingRight="8dp"
+			    android:paddingTop="3dp"
+			    android:paddingBottom="3dp"
+				android:fitsSystemWindows="true"
+			    android:hint="请输入手机号"
+			    android:imeOptions="actionDone"
+			    android:inputType="phone"
+			    android:scrollbarAlwaysDrawVerticalTrack="true"
+			    android:singleLine="true" >
+			    <requestFocus />
+ 			</EditText>
+		</LinearLayout>
+</RelativeLayout>

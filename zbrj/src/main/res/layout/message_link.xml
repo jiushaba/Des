@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rootLL"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/content" 
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:orientation="vertical" android:gravity="center"
+        android:paddingTop="8dp" android:paddingBottom="8dp" android:paddingLeft="15dp" android:paddingRight="15dp"
+    	android:background="@drawable/bg_msg_outgoing">
+	    <TextView android:id="@id/title"
+	        style="@style/ts16_black_mw_wh"
+	        android:text="你的我的儿童节 红孩子母婴网送福利了"/>
+	    
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="3dp"
+	        android:gravity="center">
+	        
+	        <ImageView android:id="@+id/image"
+				android:layout_width="50dp" android:layout_height="50dp"
+				android:scaleType="fitCenter"
+				android:src="@drawable/defaultpic"/>
+	        
+	        <TextView android:id="@+id/desc"
+				style="@style/ts14_999999_mw_wh"
+				android:text="你的我的儿童节 红孩子母婴网送福利了"
+				android:layout_marginLeft="5dp"/>
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/sourceLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="5dp">
+	    
+        <TextView android:id="@+id/source"
+	        style="@style/ts12_white_ww_wh"
+	        android:background="@drawable/im_message_author_bg"
+	        android:text="苏宁易购"/>
+    </LinearLayout>
+</LinearLayout>

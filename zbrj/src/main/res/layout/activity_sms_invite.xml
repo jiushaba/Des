@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    style="@style/ActivityLinearLayout">
+    
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        oncon:centerValue="@string/im_batchmsg"
+        oncon:leftImageSrc="@drawable/ic_back"/>
+    
+    <ScrollView style="@style/ActivityLinearLayout_ececec"
+        android:layout_height="60dp"
+        android:layout_below="@id/title" 
+        android:fillViewport="true">
+
+        <com.lz.oncon.widget.AutoWrapViewGroup
+            android:id="@+id/membersV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <com.lz.oncon.app.im.ui.common.IMMessageInputBar 
+        android:id="@+id/im_message__input_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"/>
+    
+    <com.lz.oncon.app.im.ui.audio.IlbcAmplitudeView
+        android:id="@+id/im_message__mic"
+        android:layout_width="@dimen/audio_dialog_width"
+        android:layout_height="@dimen/audio_dialog_height"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <com.lz.oncon.app.im.ui.audio.CancelSendAudioView
+        android:id="@+id/cancel_send_mic"
+        android:layout_width="@dimen/audio_dialog_width"
+        android:layout_height="@dimen/audio_dialog_height"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+     android:id="@+id/meaasge_notification"
+    android:layout_height="50dp"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <com.lz.oncon.widget.HeadImageView
+        android:id="@+id/headerview_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar_img_loading"
+        oncon:roundHeight="2dp"
+        oncon:roundWidth="2dp" />
+
+    <TextView
+        android:id="@+id/headerview_notification_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18dip" />
+
+    <ImageView
+        android:id="@+id/dep_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/left" />
+
+</LinearLayout>

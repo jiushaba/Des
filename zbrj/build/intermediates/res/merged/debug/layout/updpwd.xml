@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    	<!-- 标题栏 -->
+		<com.lz.oncon.widget.TitleView
+			android:id="@id/title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+			oncon:centerValue="@string/updpwd" oncon:rightImageSrc="@drawable/ic_finish"/>
+		<RelativeLayout android:id="@+id/updpwd_RL_username" style="@style/more_bg_none"
+		    android:layout_below="@id/title">
+
+		    <TextView
+		        android:id="@+id/updpwd_TV_username_label"
+		        style="@style/ts20_black_ww_wh"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:text="@string/username"/>
+
+		    <TextView
+		        android:id="@+id/updpwd_TV_username_value"
+		        style="@style/ts20_black_ww_wh"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="50dp"
+		        android:layout_toRightOf="@id/updpwd_TV_username_label"
+		        android:text="测试"/>
+
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/updpwd_RL_oldpwd" style="@style/more_bg_middle"
+		    android:layout_below="@id/updpwd_RL_username">
+		    <EditText android:id="@+id/updpwd_ET_oldpwd" 
+		        style="@style/ts20_black_mw_wh"
+		        android:layout_centerVertical="true" android:background="@null"
+		        android:inputType="textPassword" android:maxLength="20" 
+	    		android:hint="@string/oldpwd" android:singleLine="true" android:imeOptions="actionDone"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/updpwd_RL_newpwd" style="@style/more_bg_middle"
+		    android:layout_below="@id/updpwd_RL_oldpwd">
+		    <EditText android:id="@+id/updpwd_ET_newpwd" 
+		        style="@style/ts20_black_mw_wh"
+		        android:layout_centerVertical="true" android:background="@null"
+	    		android:inputType="textPassword" android:maxLength="20" 
+	    		android:hint="@string/newpwd" android:singleLine="true" android:imeOptions="actionDone"/>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/updpwd_RL_confirmpwd" style="@style/more_bg_bottom"
+		    android:layout_below="@id/updpwd_RL_newpwd">
+		    <EditText android:id="@+id/updpwd_ET_confirmpwd" 
+		        style="@style/ts20_black_mw_wh"
+		        android:layout_centerVertical="true" android:background="@null"
+	    		android:inputType="textPassword" android:maxLength="20" 
+	    		android:hint="@string/confirmpwd" android:singleLine="true" android:imeOptions="actionDone"/>
+		</RelativeLayout>
+</LinearLayout>

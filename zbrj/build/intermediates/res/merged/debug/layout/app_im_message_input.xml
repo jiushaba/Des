@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <ImageView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bg_msg_input"/>
+    <ImageView android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/peachy"/>
+</LinearLayout>
+
+<LinearLayout 
+    android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    android:orientation="vertical">
+	<!-- 输入 -->
+    <FrameLayout android:id="@+id/im_message__input_layout"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:minHeight="37dp">
+        <!-- 发送消息输入框 -->
+
+        <LinearLayout
+            android:id="@+id/im_message__input_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="bottom"
+            android:minHeight="37dp"
+            android:orientation="horizontal"
+            android:paddingRight="8dp" >
+
+            <!-- 切换至菜单按钮 -->
+	        <ImageView android:id="@+id/im_message_switch_to_menu"
+	            android:layout_width="25dip" android:layout_height="37dip"
+	            android:clickable="true" android:onClick="onClick"
+	            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+	            android:paddingTop="10dp" android:paddingBottom="10dp"
+	            android:src="@drawable/btn_im_switch_to_accmenu" android:visibility="gone" />
+	        <ImageView android:id="@+id/im_menu_divider" android:src="@drawable/public_menu_line"
+				android:layout_width="1dp" android:layout_height="match_parent"
+				android:scaleType="fitXY" android:visibility="gone"/>
+	        <!-- 语音/输入切换按钮 -->
+	        <ImageView android:id="@+id/im_message__change"
+	            android:layout_width="25dip" android:layout_height="37dip"
+	            android:layout_marginLeft="5dp" 
+	            android:paddingTop="5dp" android:paddingBottom="5dp"
+	            android:clickable="true" android:onClick="onClick"
+	            android:src="@drawable/btn_im_speaker"/>
+
+	        <RelativeLayout
+	            android:id="@+id/im_message__editRL"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="2dp"
+	            android:layout_marginLeft="3dp"
+	            android:layout_marginRight="3dp"
+	            android:layout_marginTop="2dp"
+	            android:layout_weight="1" >
+
+	            <!-- 输入框 -->
+		        <EditText android:id="@+id/im_message__edit"
+		            style="@style/ts18_black_mw_wh"
+		            android:background="@drawable/msg_input"
+		            android:maxLines="4" android:minLines="1"
+		            android:lineSpacingMultiplier="1.2"
+		            android:minHeight="25dp" 
+		            android:paddingTop="6dp" android:paddingBottom="3dp"
+		            android:paddingLeft="5dp" android:paddingRight="5dp"/>
+	        </RelativeLayout>
+	        <!-- 录音按钮 -->
+	        <LinearLayout android:id="@+id/im_message__button_recordLL"
+	            android:layout_width="match_parent"
+	            android:layout_height="37dp"
+	            android:paddingTop="5dp" android:paddingBottom="5dp"
+	            android:orientation="horizontal" android:visibility="gone">
+	            <Button android:id="@+id/im_message__button_record"
+	            	style="@style/ts18_black_mw_mh"
+	            	android:layout_marginLeft="2dip"
+	            	android:background="@drawable/bg_im_speaker_n"
+	            	android:text="@string/im_press2record"/>
+	        </LinearLayout>
+	        <LinearLayout android:id="@+id/rightBtnLL"
+	            android:layout_width="wrap_content" android:layout_height="37dip"
+	            android:layout_alignParentRight="true">
+	            <ImageView
+                    android:id="@+id/iv_emoticons_normal"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chatting_biaoqing_btn_normal"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_emoticons_checked"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/chatting_biaoqing_btn_enable"
+                    android:visibility="gone" />
+	            <!-- 更多按钮 -->
+		        <ImageView android:id="@+id/im_message__more"
+		            android:layout_width="25dip" android:layout_height="37dip"
+		            android:clickable="true" android:onClick="onClick"
+		            android:paddingTop="5dp" android:paddingBottom="5dp"
+		            android:visibility="gone"
+		            android:src="@drawable/btn_im_more" />
+		        <!-- 发送按钮 -->
+		        <Button android:id="@+id/im_message__send"
+		            style="@style/ts16_black_ww_wh"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center_vertical"
+		            android:paddingLeft="15dp"
+		            android:paddingRight="15dp"
+		            android:paddingTop="6dp"
+		            android:paddingBottom="6dp"
+		            android:background="@drawable/ic_but_send_bg"
+		            android:clickable="true" android:onClick="onClick"
+		            android:text="@string/send" android:visibility="visible"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    <!-- 菜单栏 -->
+	    <RelativeLayout android:id="@+id/im_message__input_layout2"
+	        android:layout_width="fill_parent" android:layout_height="37dp"
+	        android:background="@drawable/tabbar_bg" android:gravity="center_vertical"
+	        android:focusable="true" android:focusableInTouchMode="true"
+	        android:visibility="gone">
+			<!-- 切换至输入按钮 -->
+	        <ImageView android:id="@+id/im_message_switch_to_msg"
+	            android:layout_width="25dip" android:layout_height="37dip"
+	            android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+	            android:clickable="true" android:onClick="onClick"
+	            android:layout_marginLeft="5dp"
+	            android:src="@drawable/btn_im_switch_to_sendmsg"/>
+			<com.lz.oncon.widget.NoScrollGridView android:id="@+id/im_message_accmenu"
+			    android:layout_width="fill_parent" android:layout_height="37dp"
+			    android:layout_toRightOf="@id/im_message_switch_to_msg"
+			    android:cacheColorHint="#00000000"
+			    android:layout_marginLeft="5dp"
+			    android:scrollbars="none" android:listSelector="@android:color/transparent"/>
+		</RelativeLayout>
+    </FrameLayout>
+    <!-- 更多Bar -->
+    <com.lz.oncon.app.im.ui.common.IMMessageMoreBtnBar 
+		android:id="@+id/im_message__more_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:visibility="gone"/>
+	<!-- 表情Bar -->
+	<com.lz.oncon.app.im.ui.common.IMMessageFaceBar 
+		android:id="@+id/gridviewface"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"/>
+	<LinearLayout
+		android:id="@+id/em_face_container"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+             android:id="@+id/emface_vPager"
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
+</FrameLayout>

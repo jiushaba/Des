@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/peachy"
+         >
+
+        <TextView
+            android:id="@+id/friendcircle_back"
+            style="@style/common_title_IV_left"
+            android:background="@drawable/ic_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+
+
+        <TextView
+            android:id="@+id/friendcircle_message"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/friendcircle_back"
+            android:gravity="center"
+            android:text="@string/fc_message"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/friendcircle_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/fc_message_clear"
+            android:textSize="18dp" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fc_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#d7d6d4"
+        android:dividerHeight="1px"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:listSelector="#00000000" >
+    </ListView>
+
+</LinearLayout>

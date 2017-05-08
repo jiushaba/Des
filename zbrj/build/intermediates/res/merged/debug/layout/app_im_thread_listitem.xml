@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_LL"
+    android:layout_width="fill_parent"
+    android:layout_height="64dip"
+    android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/head_RL"
+            android:layout_width="50dip"
+            android:layout_height="64dip" 
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical">
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@+id/head"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar_img_loading" />
+
+            <TextView
+                android:id="@+id/head_noti1"
+                style="@style/ts12_white_ww_wh"
+                android:layout_width="9dp" android:layout_height="9dp"
+                android:layout_marginTop="8dp" android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:background="@drawable/ic_numbg_0"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_marginTop="8dip" >
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/ts14_848484_white_ww_25h"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/ts18_black_white_ww_25h"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dip"
+                android:ellipsize="end" android:maxWidth="100dp"
+                android:gravity="center_vertical"
+                android:singleLine="true" 
+                android:text="小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊小熊"/>
+            
+            <TextView
+                android:id="@+id/video_status"
+                style="@style/ts18_red_ww_25h"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/name"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true" 
+                android:text="直播中>>"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="7dip"
+            android:gravity="bottom">
+            
+            <TextView
+                android:id="@+id/head_noti2"
+                style="@style/ts14_848484_white_ww_18h"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dip"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true" 
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/sendstatus"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dip"
+				android:layout_toRightOf="@id/head_noti2"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/msg"
+                style="@style/ts14_848484_white_mw_18h"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@id/sendstatus"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:singleLine="true" 
+                android:text="msg"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

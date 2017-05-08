@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/chooser_contact_title"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightValue="@string/all_chooser_contact"
+        oncon:rightImageSrc="@drawable/bg_im_speaker" />
+
+	<com.lz.oncon.widget.SearchBar android:id="@+id/search_bar"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"/>
+
+    <!-- 这里是手机通讯录的布局  开始 -->
+    <RelativeLayout
+        android:id="@+id/phoneContactLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <com.lz.oncon.app.im.ui.IMPerContactListView
+            android:id="@+id/friend_LV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/transparent"
+            android:divider="#c3c3c3"
+            android:dividerHeight="1dp"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none" />
+
+        <com.lz.oncon.widget.MyLetterListView
+            android:id="@+id/friend_MLLV"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#40000000" />
+    </RelativeLayout>
+
+    <com.lz.oncon.app.im.contact.ChooserSelectedListView
+        android:id="@+id/im_contactchooser_selectedlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </com.lz.oncon.app.im.contact.ChooserSelectedListView>
+
+</LinearLayout>

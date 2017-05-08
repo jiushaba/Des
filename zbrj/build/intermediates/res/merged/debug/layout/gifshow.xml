@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        style="@style/title"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:gravity="center" >
+
+        <com.ant.liao.GifView
+            android:id="@+id/imageshow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:gravity="center"
+            android:visibility="gone" >
+        </com.ant.liao.GifView>
+
+        <com.lz.oncon.app.im.ui.TouchView
+            android:id="@+id/imageshow_imageview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_x="0dip"
+            android:layout_y="0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageshow__progressbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>

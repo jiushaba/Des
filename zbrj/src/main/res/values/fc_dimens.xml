@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fc_videoview_height">100dip</dimen>
+    <dimen name="fc_like_height_2">96dip</dimen>
+    <dimen name="fc_like_height_3">144dip</dimen>
+    <dimen name="fc_like_height_4">192dip</dimen>
+    <dimen name="fc_like_height_5">240dip</dimen>
+    <dimen name="fc_title_height">45dip</dimen>
+    
+    <dimen name="fc_uppop_x_1">215dp</dimen>
+    <dimen name="fc_uppop_x_2">185dp</dimen>
+    <dimen name="fc_uppop_y">10dp</dimen>
+</resources>

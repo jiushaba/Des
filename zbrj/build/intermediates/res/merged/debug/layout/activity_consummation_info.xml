@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/edit_info"
+        oncon:leftImageSrc="@drawable/ic_back"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/basic_type_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/gray"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:text="@string/basic_type_title"
+                android:textColor="@color/grey"
+                android:textSize="16dp" android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/info_head"
+                style="@style/more_bg_middle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/headpic"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/headpic" />
+
+                <ImageView
+                    android:id="@+id/head_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/left" />
+
+                <com.lz.oncon.widget.HeadImageView
+                    android:id="@+id/mng_selfinfo_IV_headpic"
+                    style="@style/mngselfinfo_iv_headpic"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/head_left"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/avatar_img_loading" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_name"
+                style="@style/person_info_edit_item"
+                android:layout_marginTop="35dp"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/nickname" />
+
+                <EditText
+                    android:id="@+id/name_ET"
+                    style="@style/person_info_edit_item_text_value"
+                    android:layout_toRightOf="@id/name_tv"
+                    android:hint="@string/must_input"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_sex"
+                style="@style/person_info_edit_item"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/sex_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/userinfo_sex" />
+
+                <RadioGroup android:id="@+id/sex_value" android:contentDescription="性别" 
+                    style="@style/person_info_edit_item_text_value"
+                    android:layout_toRightOf="@id/sex_tv"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+					<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					    android:id="@+id/sexMale" android:checked="true"
+					    android:button="@null"
+					    android:background="@drawable/radio_male"/>
+					<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					    android:id="@+id/sexFemale" 
+					    android:layout_marginLeft="10dp"
+					    android:button="@null"
+					    android:background="@drawable/radio_female"/>    
+				</RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_birthday"
+                style="@style/person_info_edit_item"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/birthday_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/birthday" />
+
+                <TextView 
+                    android:id="@+id/birthday_star"
+                    style="@style/person_info_edit_item_text_value"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""/>
+                
+                <TextView
+                    android:id="@+id/birthday_value"
+                    style="@style/person_info_edit_item_text_value"
+                    android:layout_toRightOf="@id/birthday_tv"
+                    android:layout_toLeftOf="@id/birthday_star"
+                   />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/info_area"
+                style="@style/person_info_edit_item"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/area_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/area" />
+
+                <TextView
+                    android:id="@+id/area_value"
+                    style="@style/person_info_edit_item_text_value"
+                    android:layout_toRightOf="@id/area_tv"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_score"
+                style="@style/more_bg_middle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/score_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/score_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_toRightOf="@id/score_tv"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/info_userinfo_privacy"
+                style="@style/more_bg_middle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/userinfo_privacy_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/userinfo_privacy" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_info_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/gray"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp"
+                android:text="@string/detail_info_title"
+                android:textColor="@color/grey"
+                android:textSize="16dp" android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/info_personal_label"
+                style="@style/more_bg_middle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onClick" android:layout_weight="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/personal_label_tv"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/personal_label" />
+
+                <ImageView
+                    android:id="@+id/personal_label_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/left" />
+
+                <TextView
+                    android:id="@+id/personal_label_value"
+                    style="@style/more_item_title"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/personal_label_left"
+                    android:layout_toRightOf="@id/personal_label_tv"
+                    android:gravity="right"
+                    android:hint="@string/null_info"
+                    android:textColor="@color/grey"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        	<RelativeLayout
+                android:id="@+id/privacy_setLL"
+                style="@style/person_exit"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:onClick="onClick" >
+                <TextView
+                    android:id="@+id/privacy_set"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/privacy_set" />
+            </RelativeLayout>
+        
+        	<RelativeLayout
+                android:id="@+id/blacklistLL"
+                style="@style/person_exit"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:onClick="onClick" >
+                <TextView
+                    android:id="@+id/blacklist"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/blacklist" />
+            </RelativeLayout>
+        
+            <RelativeLayout
+                android:id="@+id/aboutLL"
+                style="@style/person_exit"
+                android:layout_marginBottom="70dp"
+                android:clickable="true"
+                android:onClick="onClick" >
+                <TextView
+                    android:id="@+id/about"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/about_app" />
+            </RelativeLayout>
+
+</LinearLayout>

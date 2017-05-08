@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+	<!-- 标题栏 -->
+	<com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/enter_name" oncon:rightValue="@string/confirm"/>
+	<!-- memo -->
+	<TextView android:id="@+id/memo" style="@style/ts16_darker_gray_ww_wh"
+	    android:layout_below="@id/title" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"
+	    android:text="@string/set_headpic_nickname_memo" />
+	<!-- 头像 -->
+	<ImageView android:id="@+id/head_IV" android:layout_width="100dp" android:layout_height="100dp"
+	    android:layout_below="@id/memo" android:layout_marginTop="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/avatar_img_loading"
+	    android:clickable="true" android:onClick="onClick"/>
+	<!-- 昵称 -->
+	<TextView android:id="@+id/nickname_BG" android:layout_below="@id/head_IV" android:background="@drawable/input"
+	   android:layout_width="fill_parent" android:layout_height="50dp" android:layout_marginTop="10dp"
+	   android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+	<!-- 提示 -->
+	<TextView android:id="@+id/nickname_TV" android:layout_alignLeft="@id/nickname_BG" android:layout_alignTop="@id/nickname_BG" android:gravity="center"
+	    style="@style/ts20_black_ww_50h"
+	    android:layout_marginLeft="10dp"
+	    android:text="@string/nickname" />
+	<!-- 昵称 -->
+	<EditText android:id="@+id/nickname_ET" android:layout_toRightOf="@id/nickname_TV" android:layout_alignTop="@id/nickname_BG" android:layout_alignRight="@id/nickname_BG"
+	    android:gravity="center_vertical" android:background="@null"
+	    style="@style/ts20_black_mw_50h"
+	   	android:layout_marginLeft="20dp" android:layout_marginRight="10dp"
+		android:imeOptions="normal" android:hint="@string/nickname_example" />
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/logonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo_login" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_input_layoutheight"
+        android:layout_below="@+id/logonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_input_marginTop"
+       >
+
+        <com.lz.oncon.widget.EditableSpinner
+            android:id="@+id/login_ES_username"
+            style="@style/login_username"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:maxLength="20"
+            oncon:height="50"
+            oncon:hint="@string/login_input_phonehint"
+            android:background="@drawable/bg_corner_all_white7"
+            android:paddingLeft="10dp"
+            oncon:width="186" />
+		
+       
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_input_layoutheight"
+        android:layout_below="@+id/phoneLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <EditText
+            android:id="@+id/login_ET_password"
+            style="@style/ts16_black_mw_mh"
+            android:background="@drawable/bg_corner_all_white7"
+            android:hint="@string/login_input_pwdhint"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingBottom="@dimen/pic_nine_padding"
+            android:paddingTop="@dimen/pic_nine_padding"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:textColorHint="#b3b3b3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/forgetLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwdLayout"
+        android:layout_marginTop="22dp"
+        >
+
+        <TextView
+            android:id="@+id/login_TV_Btn_login"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/findpwd"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/bg_corner_all_white7"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="@string/login_zbrj"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+        
+        <TextView
+            android:id="@+id/login_Btn_register"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp" android:paddingBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/login_TV_Btn_login"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/bg_corner_all_white7"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="@string/fast_register"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+        
+        <TextView
+            android:id="@+id/findpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/login_TV_Btn_login"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="3dp" android:paddingRight="3dp"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="@string/findpwd_title"
+            android:textColor="#340000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_protocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/forgetLayout"
+        android:paddingTop="10dp"
+        android:onClick="onClick"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:text="@string/login_protocol" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_protocal"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/bg_biaoyu" />
+
+</RelativeLayout>
+
+</RelativeLayout>

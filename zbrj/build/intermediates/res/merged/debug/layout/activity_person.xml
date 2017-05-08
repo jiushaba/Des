@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/more_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/detail" 
+        oncon:leftImageSrc="@drawable/ic_back"/>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/more_personInfo"
+                style="@style/person_info"
+                android:orientation="horizontal">
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/mng_selfinfo_IV_headpic"
+                        style="@style/mngselfinfo_iv_headpic_big"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_img_loading" />
+                    <TextView android:id="@+id/btn_under_head"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/bg_person_btn"
+                        style="@style/ts14_black_ww_wh"
+                        android:paddingTop="3dp" android:paddingBottom="3dp" android:paddingLeft="5dp" android:paddingRight="5dp"
+                        android:text="@string/update_head"
+                        android:onClick="onClick" android:clickable="true"/>
+                </LinearLayout>
+                    
+				<LinearLayout android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginLeft="10dp"
+				    android:orientation="vertical">
+				    
+				    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+				    
+	                    <TextView
+	                        android:id="@+id/nickname_v"
+	                        style="@style/ts16_black_white_ww_wh"
+	                        android:ellipsize="end"
+	                        android:maxLength="30"
+	                        android:singleLine="true"
+	                        android:text="test"
+	                        android:textStyle="bold" />
+	                    
+	                    <TextView android:id="@+id/sex_v"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="10dp"
+	                        android:textColor="@color/CornflowerBlue"
+	                        android:textSize="16dp"
+	                        android:text="@string/male_sign"/>
+	                    
+	                    <LinearLayout android:id="@+id/edit"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="right|center_vertical"
+	                        android:onClick="onClick"
+	                        android:clickable="true">
+	                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	                            android:src="@drawable/btn_edit"/>
+	                        <TextView 
+	                        	style="@style/ts16_black_white_ww_wh"
+	                        	android:text="@string/edit_info"/>
+	                    </LinearLayout>
+                    </LinearLayout>
+
+				    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+	                    <TextView
+	                        android:id="@+id/old"
+	                        style="@style/ts14_black_ww_wh"
+	                        android:text="17岁" />
+                        <TextView
+                        	android:id="@+id/location"
+                        	android:layout_marginLeft="20dp"
+                        	style="@style/ts14_black_mw_wh"
+                        	android:text="浙江 杭州"/>
+                    </LinearLayout>
+				    
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/fans"
+                            android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1"
+	                        android:gravity="center_vertical"
+	                        android:onClick="onClick" android:clickable="true">
+	                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	                            android:src="@drawable/ic_person_fans"/>
+	                        <TextView android:id="@+id/fans_num"
+	                        	style="@style/ts14_black_white_ww_wh"
+	                        	android:text="765"/>
+	                    </LinearLayout>
+	                    <LinearLayout android:id="@+id/focus"
+                            android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:layout_weight="1"
+	                        android:gravity="center_vertical"
+	                        android:onClick="onClick" android:clickable="true">
+	                        <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	                            android:src="@drawable/ic_person_friend"/>
+	                        <TextView android:id="@+id/focus_num"
+	                        	style="@style/ts14_black_white_ww_wh"
+	                        	android:text="201"/>
+	                    </LinearLayout>
+	                    <TextView android:id="@+id/add_special_friend"
+	                        android:background="@drawable/bg_person_btn"
+	                        style="@style/ts14_black_ww_wh"
+	                        android:paddingTop="3dp" android:paddingBottom="3dp" android:paddingLeft="5dp" android:paddingRight="5dp"
+	                        android:text="@string/add_special_friend"
+	                        android:visibility="invisible"/>
+                    </LinearLayout>
+                    
+                    
+				</LinearLayout>
+            </LinearLayout>
+            
+            <RelativeLayout
+                style="@style/person_sign"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+				
+                <TextView
+                    android:id="@+id/sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_person_sign"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="15dp" android:paddingBottom="15dp"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:text="一个承诺会让一个人悲伤，一个承诺会让一个人失落，不要轻易许诺，许下的诺言就是欠下的债" />
+                
+                <TextView
+                    style="@style/ts14_black_ww_wh"
+                    android:layout_marginLeft="15dp" 
+                    android:text="@string/personal_sign" />
+                
+                <LinearLayout android:id="@+id/edit_label"
+					android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true" android:layout_marginRight="10dp"
+					android:gravity="center_vertical"
+					android:onClick="onClick" android:clickable="true">
+	                <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	                	android:src="@drawable/btn_edit"/>
+	                <TextView style="@style/ts14_black_white_ww_wh"
+	                    android:text="@string/update"/>
+	        	</LinearLayout>
+            </RelativeLayout>
+            <View android:layout_width="match_parent" android:layout_height="20dp"/>
+            <include layout="@layout/line"/>
+
+            <LinearLayout
+                android:id="@+id/footprintLL"
+                style="@style/person_footprint"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/footprint"
+                    style="@style/ts14_black_ww_wh"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/log" />
+                
+                <LinearLayout android:id="@+id/video"
+					android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:layout_marginLeft="20dp"
+	                android:onClick="onClick" android:clickable="true">
+	                <ImageView android:layout_width="20dp" android:layout_height="20dp"
+	                	android:src="@drawable/ic_person_video"/>
+	                <TextView android:id="@+id/video_num"
+	                	style="@style/ts14_black_white_ww_wh"
+	                    android:text="-"/>
+				</LinearLayout>
+            </LinearLayout>
+            
+            <View android:layout_width="match_parent" android:layout_height="match_parent"
+                android:layout_weight="1"/>
+              <RelativeLayout
+                android:id="@+id/findPwdLL"
+                style="@style/person_exit"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_marginBottom="5dp" >
+                <TextView
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/findpwd_title" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/exitLL"
+                style="@style/person_exit"
+                android:clickable="true"
+                android:onClick="onClick" >
+                <TextView
+                    android:id="@+id/exit"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/exit" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/add_blacklistLL"
+                style="@style/person_exit"
+                android:clickable="true"
+                android:onClick="onClick" 
+                android:visibility="gone"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/add_blacklist"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/add_blacklist" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/find_msg_recordLL"
+                style="@style/person_exit"
+                android:clickable="true"
+                android:onClick="onClick" 
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/find_msg_record"
+                    style="@style/ts14_black_ww_wh"
+                    android:text="@string/find_msg_record" />
+            </RelativeLayout>
+            
+            <LinearLayout android:id="@+id/menubar"
+                android:layout_width="match_parent" android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+                <ImageView android:id="@+id/msg_not_noti"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="17dp"
+                    android:src="@drawable/btn_person_mute"
+                    android:onClick="onClick" android:clickable="true"/>
+                <ImageView android:id="@+id/chat"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="17dp"
+                    android:src="@drawable/btn_person_chat"
+                    android:onClick="onClick" android:clickable="true"/>
+                <ImageView android:id="@+id/recommand_to_friend"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="17dp"
+                    android:src="@drawable/btn_person_share"
+                    android:onClick="onClick" android:clickable="true"/>
+            </LinearLayout>
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

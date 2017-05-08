@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/im_thread_list_item_bg"
+    android:orientation="vertical" 
+    android:gravity="center_vertical">
+    
+    <include
+        android:id="@id/header"
+        layout="@layout/friend_list_item_section" />
+    <RelativeLayout
+        android:id="@+id/indexLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:paddingTop="3dip"
+        android:paddingLeft="15dip"
+        android:paddingBottom="3dip"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/text_first_char_hint"
+            style="@style/ts15_black_ww_wh"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="60dip">
+		        
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@id/icon"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/avatar_img_loading"/>
+
+            <TextView
+                android:id="@id/name"
+                style="@style/ts16_black_white_ww_mh"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/icon"
+                android:gravity="left|center"
+                android:singleLine="true"
+                android:textAppearance="?android:textAppearanceLarge"/>
+            
+            <TextView android:id="@+id/setOwner"
+                style="@style/ts16_black_white_ww_wh"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_but_send_bg"
+                android:text="@string/set_owner"/>
+        </RelativeLayout>
+
+</LinearLayout>

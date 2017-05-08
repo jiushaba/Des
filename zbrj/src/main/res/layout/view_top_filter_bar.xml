@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_top_filter_bar"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/filter_company_btn"
+        android:layout_width="0.0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/top_filter_btn_bg"
+        android:gravity="center_vertical"
+        android:padding="4.0dip" >
+
+        <TextView
+            android:id="@+id/tv_filter_company"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/company"
+            android:textColor="@color/font_middle_tab"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/icon_filter_arrow_down" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/border_large_weight"
+        android:layout_height="fill_parent"
+        android:background="@color/border" />
+
+    <LinearLayout
+        android:id="@+id/filter_school_btn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/top_filter_btn_bg"
+        android:gravity="center"
+        android:padding="4.0dip" >
+
+        <TextView
+            android:id="@+id/tv_filter_school"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/school"
+            android:textColor="@color/font_middle_tab"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/icon_filter_arrow_down" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/border_large_weight"
+        android:layout_height="fill_parent"
+        android:background="@color/border" />
+
+    <LinearLayout
+        android:id="@+id/filter_office_btn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/top_filter_btn_bg"
+        android:gravity="center"
+        android:padding="4.0dip" >
+
+        <TextView
+            android:id="@+id/tv_filter_office"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/office"
+            android:textColor="@color/font_middle_tab"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/icon_filter_arrow_down" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/border_large_weight"
+        android:layout_height="fill_parent"
+        android:background="@color/border" />
+
+    <LinearLayout
+        android:id="@+id/filter_area_btn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="@drawable/top_filter_btn_bg"
+        android:gravity="center"
+        android:padding="4.0dip" >
+
+        <TextView
+            android:id="@+id/tv_filter_area"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/area"
+            android:textColor="@color/font_middle_tab"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="16.0dip"
+            android:layout_height="16.0dip"
+            android:src="@drawable/icon_filter_arrow_down" />
+    </LinearLayout>  
+</LinearLayout>

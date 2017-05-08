@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_im_sys_message_root"
+    style="@style/ActivityLinearLayout">
+    
+    <com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"/>
+
+    <ListView
+        android:id="@+id/im_sys_message__list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="2dip"
+        android:transcriptMode="normal" 
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"/>
+</LinearLayout>

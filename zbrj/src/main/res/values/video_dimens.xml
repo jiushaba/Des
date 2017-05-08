@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_start_layout_width">300dp</dimen>
+    <dimen name="video_start_layout_marginLeft">50dp</dimen>
+</resources>

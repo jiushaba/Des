@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dip"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+	<ImageView android:id="@+id/message_location_bg"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_gravity="center"
+		android:background="@drawable/location_msg1" />
+
+	<TextView android:id="@+id/message_location_attr"
+	    style="@style/ts10_FF0000_mw_wh"
+		android:lines="2"
+		android:ellipsize="marquee"
+		android:padding="2dip"
+		android:layout_gravity="center_horizontal"
+		android:background="@drawable/location_msg2"
+		android:text="北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村北京中关村"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout"
+    android:background="@color/gray" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/disturb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/disturb_msg_title"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <RelativeLayout
+        style="@style/more_bg_none"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            style="@style/more_item_title"
+            android:text="@string/disturb_msg_title"
+            />
+
+        <ImageView
+            android:id="@+id/disturb_openclose"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_switch"
+            android:onClick="onClick" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/more_bg_memo"
+        android:layout_marginTop="5dp"
+        android:text="@string/disturb_msg_notice"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/setting_time_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/start_time_rl"
+            style="@style/more_bg_none"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <TextView
+                style="@style/more_item_title"
+                android:text="@string/disturb_msg_start_time" />
+
+            <TextView
+                android:id="@+id/start_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/end_time_rl"
+            style="@style/more_bg_none"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:onClick="onClick"  >
+
+            <TextView
+                style="@style/more_item_title"
+                android:text="@string/disturb_msg_end_time" />
+
+            <TextView
+                android:id="@+id/end_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

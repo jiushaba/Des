@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/friendcircle_bar_root"
+    android:layout_width="fill_parent"
+    android:layout_height="64dip"
+    android:background="@drawable/msg_item_bg"
+    android:clickable="true"
+    android:gravity="center"
+    android:onClick="onClick" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dip" >
+
+        <com.lz.oncon.widget.HeadImageView
+            android:id="@+id/friendcircle_bar_noti_icon"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/friendcircle_icon" />
+
+        <TextView
+            android:id="@+id/friendcircle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/friendcircle_bar_noti_icon"
+            android:text="@string/fc_title"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/friendcircle_bar_text_noti_fl"
+            style="@style/ts12_white_ww_wh"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/friendcircle_title"
+            android:background="@drawable/ic_numbg_0"
+            android:visibility="gone"
+             />
+
+        <FrameLayout
+            android:id="@+id/friendcircle_bar_noti_fl"
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:visibility="gone"
+             >
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@+id/friendcircle_bar_noti_avatar"
+                android:layout_width="44dip"
+                android:layout_height="44dip"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar_img_loading" />
+
+            <TextView
+                android:id="@+id/friendcircle_bar_noti_sum"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="right|top"
+                 android:background="@drawable/ic_numbg_0"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16dip"
+                 />
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/friendc_divider_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

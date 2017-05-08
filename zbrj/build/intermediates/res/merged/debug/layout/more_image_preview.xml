@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="1/6"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <FrameLayout
+        android:id="@+id/more_image_preview_framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title" >
+
+        <com.lz.oncon.widget.ScrollLayout
+            android:id="@+id/more_image_scrolayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="45dip"
+            android:background="@android:color/black"
+            android:clickable="true"
+            android:onClick="onClick" />
+        <ImageView
+            android:id="@+id/more_image_preview_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_cancel"
+            android:layout_gravity="top|right"
+            android:layout_margin="5dip"/>
+		<com.lz.oncon.app.im.morepic.MoreImageChooserSelectedListView
+            android:id="@+id/more_image_preview_selectedlv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+		
+		<ImageView
+		    android:id="@+id/more_image_preview_rotate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/ic_pic_rotate"
+		    android:layout_margin="5dip"
+		    android:layout_gravity="top|left"
+		    android:clickable="true" 
+		    android:onClick="onClick" />
+    </FrameLayout>
+
+</RelativeLayout>

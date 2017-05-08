@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+	    
+	    <EditText
+	        android:id="@+id/search_word"
+	        style="@style/ts16_b3b3b3_mw_wh"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/tserch"
+	        android:hint="@string/search_memo"
+	        android:maxLength="15"
+	        android:textColor="@color/grey2"
+	        android:paddingLeft="35dp"
+	        android:paddingRight="30dp"
+	        android:singleLine="true" />
+	
+	    <ImageView
+	        android:id="@+id/search_button"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignLeft="@id/search_word"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/serch_ico"
+	        android:clickable="true"
+	        android:onClick="onClick"
+	        android:scaleType="fitXY" />
+	
+	    <ImageView
+	        android:id="@+id/search_bar_cancel"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_centerVertical="true"
+			android:padding="5dp"
+			android:layout_alignRight="@id/search_word"
+	        android:src="@drawable/error"
+	        android:clickable="true"
+	        android:onClick="onClick"
+	        android:scaleType="fitXY"
+	        android:visibility="gone" />
+	
+	</RelativeLayout>

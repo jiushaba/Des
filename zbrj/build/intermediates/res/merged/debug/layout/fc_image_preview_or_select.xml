@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/content"
+         android:layout_below="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- 标题栏 -->
+    
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/common_title_bg" >
+
+        <TextView
+            android:id="@+id/friendcircle_back"
+            style="@style/common_title_IV_left"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/preview_image_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/more_image_choose_preview_button"
+                style="@style/ts16_black_ww_40h"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

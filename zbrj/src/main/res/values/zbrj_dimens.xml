@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="channel_width">120dip</dimen>
+    <dimen name="channel_height">30dip</dimen>
+    
+    <dimen name="comp_video_item_width">150dp</dimen>
+    <dimen name="comp_video_item_padding">3dp</dimen>
+    
+    <dimen name="im_msg_more_btn_bar_margin">20dp</dimen>
+    
+    <dimen name="view_pager_pointer_width">5dp</dimen>
+    <dimen name="view_pager_pointer_margin_left">5dp</dimen>
+</resources>

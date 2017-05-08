@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" 
+    android:layout_marginTop="3dp"
+    >
+
+    <TextView
+        android:id="@+id/danmu_list_nick"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="老谭"
+        style="@style/ts20_black"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="3dp"
+        android:layout_margin="1dp"
+        />
+	<include layout="@layout/linev" />
+    <ImageView
+        android:id="@+id/danmu_list_relative"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_danmu_relative"
+        android:layout_gravity="center_vertical" 
+         android:paddingLeft="2dp"
+        android:layout_margin="1dp"
+        />
+	<include layout="@layout/linev" />
+    <TextView
+        android:id="@+id/danmu_list_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="聊天的内容信息asdflkasjdflkajsdlkfajsdlfkajs;ldfja;dslfjkl"
+        android:layout_gravity="center_vertical"
+        style="@style/ts20_black"
+        android:singleLine="true"
+         android:paddingLeft="3dp"
+        android:layout_margin="1dp"
+         />
+	<include layout="@layout/linev" />
+    <TextView
+        android:id="@+id/danmu_list_distance"
+         android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        style="@style/ts20_black"
+         android:paddingLeft="3dp"
+        android:layout_margin="1dp"
+        android:text="20M" />
+	<include layout="@layout/linev" 
+	    android:id="@+id/kick_line"/>
+    <ImageView
+        android:id="@+id/danmu_list_kick"
+       android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_danmu_kick" 
+        android:paddingRight="2dp"
+        android:layout_margin="1dp"
+        />
+	<include layout="@layout/linev" 
+	    android:id="@+id/gag_line"/>
+    <ImageView
+        android:id="@+id/danmu_list_gag"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_danmu_gag"
+        android:paddingRight="2dp"
+        android:layout_margin="1dp" />
+	<include layout="@layout/linev" />
+    <TextView
+        android:id="@+id/danmu_list_time"
+      	android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:singleLine="true"
+        style="@style/ts20_black"
+         android:paddingLeft="3dp"
+        android:layout_margin="1dp"
+        android:text="1分55秒前" />
+
+</LinearLayout>

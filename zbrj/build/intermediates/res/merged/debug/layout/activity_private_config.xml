@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_menu_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/private_config_profile"
+                layout="@layout/section_flag" />
+
+            <include layout="@layout/line" />
+
+            <com.lz.oncon.activity.connections.widget.ListViewInScrollView
+                android:id="@+id/private_config_profile_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_form_item_normal"
+                android:divider="@color/border"
+                android:dividerHeight="@dimen/border_weight"
+                android:drawSelectorOnTop="false"
+                android:paddingLeft="@dimen/form_item_middle_margin_weight"
+                android:paddingRight="0.0dip"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line" />
+
+            <include
+                android:id="@+id/private_config_add_friend"
+                layout="@layout/section_flag" />
+
+            <include layout="@layout/line" />
+
+            <com.lz.oncon.activity.connections.widget.ListViewInScrollView
+                android:id="@+id/private_config_add_friend_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_form_item_normal"
+                android:divider="@color/border"
+                android:dividerHeight="@dimen/border_weight"
+                android:drawSelectorOnTop="false"
+                android:paddingLeft="@dimen/form_item_middle_margin_weight"
+                android:paddingRight="0.0dip"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line" />
+
+            <include
+                android:id="@+id/private_config_send_msg"
+                layout="@layout/section_flag" />
+
+            <include layout="@layout/line" />
+
+            <com.lz.oncon.activity.connections.widget.ListViewInScrollView
+                android:id="@+id/private_config_send_msg_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_form_item_normal"
+                android:divider="@color/border"
+                android:dividerHeight="@dimen/border_weight"
+                android:drawSelectorOnTop="false"
+                android:paddingLeft="@dimen/form_item_middle_margin_weight"
+                android:paddingRight="0.0dip"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line" />
+
+            <include
+                android:id="@+id/private_config_feed_scope"
+                layout="@layout/section_flag" />
+
+            <include layout="@layout/line" />
+
+            <com.lz.oncon.activity.connections.widget.ListViewInScrollView
+                android:id="@+id/private_config_feed_scope_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_form_item_normal"
+                android:divider="@color/border"
+                android:dividerHeight="@dimen/border_weight"
+                android:drawSelectorOnTop="false"
+                android:paddingLeft="@dimen/form_item_middle_margin_weight"
+                android:paddingRight="0.0dip"
+                android:scrollbars="none" />
+
+            <include layout="@layout/line" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="隐私说明：为了保障您的隐私，手机号等联系方式仅好友可见。"
+                android:textColor="@color/font_gray"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

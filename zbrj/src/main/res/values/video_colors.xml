@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="video_control_start_color">#B2000000</color>
+    <color name="video_control_title_color">#CC000000</color>
+    <color name="video_menu_background">#99d7d5d5</color>
+     <color name="gray_c2">#F3F3F7</color>
+    <color name="red_c3">#B60000</color>
+    <color name="gray_c4">#CFCFD2</color>
+    <color name="red_c6">#F43531</color>
+	<color name="gray_c7">#E4E4E4</color>
+    <color name="gray_c8">#706F6F</color>
+    <color name="green_video">#1CE0A7</color>
+</resources>

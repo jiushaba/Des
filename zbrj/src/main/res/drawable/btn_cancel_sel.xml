@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <!-- 圆角的半径  也可以统一设置半径 android:radius="9dp" -->
+    		<corners android:radius="10dp"/>
+            <solid android:color="#bcbab6" />
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="1px"
+        android:left="1px"
+        android:right="1px"
+        android:top="1px">
+        <shape>
+            <!-- 圆角的半径  也可以统一设置半径 android:radius="9dp" -->
+    		<corners android:radius="10dp"/>
+
+    		<!-- 没有描边的中间部分 -->
+    		<solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+</layer-list>

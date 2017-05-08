@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="center_horizontal" android:background="#702e2e2e">
+	
+	<LinearLayout android:id="@+id/pop_layout" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@drawable/bg_widget_imagetextshare_popupwindow" 
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+	    android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+	    android:layout_centerInParent="true">
+	
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:orientation="vertical"
+	        android:padding="5dp">
+		    <TextView android:id="@id/title"
+		        style="@style/ts16_black_mw_wh" android:singleLine="true"
+		        android:text="你的我的儿童节 红孩子母婴网送福利了"/>
+		    
+		    <LinearLayout android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:layout_marginTop="15dp"
+		        android:gravity="center">
+		        
+		        <ImageView android:id="@+id/image"
+					android:layout_width="50dp" android:layout_height="50dp"
+					android:scaleType="fitCenter"
+					android:src="@drawable/defaultpic"/>
+		        
+		        <TextView android:id="@+id/brief"
+					style="@style/ts14_999999_mw_wh"
+					android:text="你的我的儿童节 红孩子母婴网送福利了\n2014-05-31"
+					android:layout_marginLeft="5dp"/>
+		    </LinearLayout>
+		    
+		    <TextView android:id="@+id/author"
+		        style="@style/ts12_888888_ww_wh"
+		        android:layout_marginTop="8dp"
+		        android:text="来自 苏宁易购"/>
+	    </LinearLayout>
+	    
+	    <EditText android:id="@+id/content"
+	        style="@style/ts20_black_mw_wh"
+	        android:maxLines="4"
+	        android:background="@drawable/input"
+	        android:hint="@string/say_something"/>
+	    
+	    <LinearLayout android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_marginTop="10dp">
+		    
+	        <TextView android:id="@+id/cancel"
+				style="@style/ts20_black_mw_wh"
+				android:text="@string/cancel"
+				android:gravity="center"
+				android:background="@drawable/btn_cancel"
+				android:paddingTop="8dp" android:paddingBottom="8dp"
+				android:layout_weight="1"/>
+	        
+	        <TextView android:layout_width="30dp" android:layout_height="match_parent"/>
+	        
+	        <TextView android:id="@+id/share"
+				style="@style/ts20_white_mw_wh"
+				android:text="@string/share"
+				android:gravity="center"
+				android:background="@drawable/btn_share_invite"
+				android:paddingTop="8dp" android:paddingBottom="8dp"
+				android:layout_weight="1"/>
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

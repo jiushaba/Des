@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/dialog"
+    android:background="@color/whitesmoke"
+    >
+
+    <RelativeLayout
+		android:id="@+id/sinaLayout"        
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+         android:background="@drawable/share_dialog_selector"
+         android:clickable="true" android:onClick="onClick"
+         >
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/login_input_layoutheight"
+            android:layout_height="@dimen/login_input_layoutheight"
+            android:background="@drawable/share_dialog_sina" 
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="20dp"
+            style="@style/ts20_black_mw_wh"
+            android:text="@string/weibo_share_sina_title"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        
+        ></LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/qqLayout"     
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/share_dialog_selector"
+        android:clickable="true" android:onClick="onClick"
+         >
+        
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/login_input_layoutheight"
+            android:layout_height="@dimen/login_input_layoutheight"
+            android:background="@drawable/share_dialog_qq" 
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_toRightOf="@id/icon"
+            android:layout_marginLeft="20dp"
+            style="@style/ts20_black_mw_wh"
+            android:text="@string/weibo_share_qq_title"
+            android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+    
+
+</LinearLayout>

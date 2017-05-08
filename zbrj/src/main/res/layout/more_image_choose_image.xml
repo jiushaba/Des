@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="***"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <GridView
+        android:id="@+id/more_image_choose_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="45dip"
+        android:listSelector="@android:color/white"
+        android:stretchMode="columnWidth"
+    	android:numColumns="auto_fit"
+    	android:columnWidth="@dimen/image_thumbnail_size"
+        android:padding="@dimen/image_thumbnail_spacing"
+    	android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+    	android:verticalSpacing="@dimen/image_thumbnail_spacing" />
+
+    <LinearLayout
+        android:id="@+id/more_image_choose_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar_bg"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/more_image_choose_preview"
+            style="@style/ts16_black_ww_40h"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_but_send_bg"
+            android:text="preview"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_image_choose_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/more_image_choose_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>

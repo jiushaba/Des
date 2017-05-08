@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="18.0dip"
+        android:paddingLeft="12.0dip"
+        android:paddingRight="12.0dip"
+        android:paddingTop="12.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/detail_header_layout"
+            android:layout_width="@dimen/height_avatar_normal"
+            android:layout_height="@dimen/height_avatar_normal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="4.0dip" >
+
+            <ImageView
+                android:id="@+id/detail_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+             <TextView
+                android:id="@+id/detail_header_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="48sp"
+                android:textColor="#9EA3A7"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:background="#F6F6F6"
+                android:visibility="gone"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/detail_header_top_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toRightOf="@id/detail_header_layout"
+            android:maxWidth="160.0dip"
+            android:singleLine="true"
+            android:textColor="@color/font_on_dark"
+            android:textSize="@dimen/font_large" />
+
+        <View
+            android:id="@+id/verify_view"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_above="@+id/detail_header_middle_txt"
+            android:layout_alignRight="@id/detail_header_top_txt"
+            android:layout_marginTop="8.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/detail_header_top_right_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/detail_header_top_txt"
+            android:gravity="center"
+            android:paddingTop="4.0dip"
+            android:singleLine="true"
+            android:text="我要加V"
+            android:textColor="@color/font_verify"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/detail_header_middle_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_header_top_txt"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/detail_header_layout"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/font_on_dark"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/detail_header_bottom_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_header_middle_txt"
+            android:layout_marginTop="4.0dip"
+            android:layout_toRightOf="@id/detail_header_layout"
+            android:singleLine="true"
+            android:textColor="@color/font_on_dark"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/detail_header_relation"
+        android:layout_width="35.0dip"
+        android:layout_height="35.0dip"
+        android:layout_gravity="top|right|center" />
+
+</FrameLayout>

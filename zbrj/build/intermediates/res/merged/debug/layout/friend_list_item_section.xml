@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="18.0sp"
+    android:background="@android:color/darker_gray"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/ts14_white_46w_wh"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.0dip"
+        android:gravity="left"
+        android:textStyle="bold" />
+
+</RelativeLayout>

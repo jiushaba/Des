@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/peachy" >
+
+        <TextView
+            android:id="@+id/friendcircle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/log"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/friendcircle_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/friendcircle_title"
+            android:scaleType="center"
+            android:src="@drawable/sync_msg_loading"
+            android:visibility="gone" />
+
+        <ImageView
+	        android:id="@+id/common_title_TV_left"
+	        style="@style/common_title_IV_left"
+	        android:padding="0dp"
+	        android:src="@drawable/ic_back"
+	        android:layout_centerVertical="true"
+	        android:layout_marginBottom="2dp"
+        	android:layout_marginLeft="8dp"
+        	android:layout_marginTop="2dp"
+        	android:clickable="true"
+        	android:onClick="onClick"/>
+        
+        <ImageView
+	        android:id="@+id/common_title_TV_right"
+	        style="@style/common_title_IV_left"
+	        android:padding="0dp"
+	        android:src="@drawable/btn_person_more"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginBottom="2dp"
+        	android:layout_marginRight="8dp"
+        	android:layout_marginTop="2dp"
+        	android:clickable="true"
+        	android:onClick="onClick"/>
+    </RelativeLayout>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_friendcircle"
+    android:layout_marginBottom="10dp" android:layout_marginTop="45dp"
+	android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+	android:paddingTop="40dp" android:paddingBottom="5dp">
+
+    <com.lz.oncon.activity.friendcircle.FriendCircleListView
+        android:id="@+id/friendcircle_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:orientation="vertical"
+        android:scrollbars="none" />
+    
+    <RelativeLayout
+        android:id="@+id/friendcircle_comment_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/common_title_bg"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/friendcircle_comment_rl_btn"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_alignParentRight="true"
+			android:text="@string/fc_comment_send"
+			android:textSize="16dp"
+			android:background="@drawable/ic_but_send_bg"
+			android:layout_marginRight="3dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginBottom="8dip"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:id="@+id/friendcircle_comment_rl_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/friendcircle_comment_rl_btn"
+            android:background="@drawable/msg_input"
+            android:layout_marginRight="3dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip" />
+        
+    </RelativeLayout>
+
+</FrameLayout>
+		<RelativeLayout
+                style="@style/person_info"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+    
+    			<com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/head"
+                        style="@style/mngselfinfo_iv_headpic_big"
+                        android:layout_centerVertical="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/avatar_img_loading"/>
+                    
+				<LinearLayout android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+				    android:layout_toRightOf="@id/head"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical">
+				    
+                    <TextView
+                        android:id="@+id/nickname"
+                        style="@style/ts16_black_white_ww_wh"
+                        android:ellipsize="end"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:text="test"
+                        android:textStyle="bold" />
+                    
+                    <TextView android:id="@+id/sex_v"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_marginLeft="10dp"
+	                        android:textColor="@color/CornflowerBlue"
+	                        android:textSize="16dp"
+	                        android:text="@string/male_sign"/>
+                    
+                    <LinearLayout android:id="@+id/video"
+						android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:layout_marginLeft="20dp"
+		                android:onClick="onClick" android:clickable="true">
+		                <ImageView android:layout_width="20dp" android:layout_height="20dp"
+		                	android:src="@drawable/ic_person_video"/>
+		                <TextView android:id="@+id/video_num"
+		                	style="@style/ts14_black_white_ww_wh"
+		                    android:text="-"/>
+					</LinearLayout>
+				</LinearLayout>
+	</RelativeLayout>
+	<TextView android:id="@+id/msg_noti"
+	    style="@style/ts16_black_ww_wh"
+	    android:layout_width="140dp" android:layout_height="50dp"
+	    android:background="@drawable/bt_person_msg"
+	    android:gravity="center"
+	    android:text="新消息 56条"
+	    android:layout_marginTop="35dp"
+	    android:layout_gravity="right"
+	    android:visibility="gone"/>
+		<LinearLayout android:id="@+id/menu_ll" 
+            android:layout_gravity="right" android:layout_marginTop="-1dp"
+            android:layout_width="90dp" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_menu"
+            android:visibility="gone">
+            <TextView android:id="@+id/history_msg"
+                style="@style/ts16_black_mw_wh" android:gravity="center" android:layout_height="35dp"
+                android:onClick="onClick" android:clickable="true"
+                android:text="@string/history_msg"/>
+        </LinearLayout>
+</FrameLayout>
+</LinearLayout>

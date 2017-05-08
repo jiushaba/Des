@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/join_group_form_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/join_group_form_dep"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightValue="@string/send" />
+
+    <RelativeLayout
+        android:id="@+id/group_info_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/join_group_form_title"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/join_group_describe"
+            style="@style/ts16_black_mw_mh"
+            android:textSize="20dp"
+            android:text="@string/join_group_form_dep_des" />
+
+        <EditText
+            android:id="@+id/join_group_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/join_group_describe"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/group_settings_rename_selector"
+            android:gravity="left|top" />
+    </RelativeLayout>
+
+</RelativeLayout>

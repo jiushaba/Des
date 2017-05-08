@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/empty_info_iv" 
+		android:src="@drawable/defaultpic"
+		android:layout_centerInParent="true"/>
+	<TextView style="@style/ts18_b3b3b3_ww_wh"
+	    android:layout_below="@id/empty_info_iv" android:layout_centerHorizontal="true"
+	    android:id="@+id/empty_info_tv" android:text="@string/im_warning_network_check2"/>
+</RelativeLayout>

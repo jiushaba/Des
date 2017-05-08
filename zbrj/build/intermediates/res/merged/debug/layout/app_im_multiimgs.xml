@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:oncon="http://schemas.android.com/apk/res-auto"
+	style="@style/ActivityLinearLayout">
+
+	<com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		style="@style/title"
+		oncon:centerValue="0/0" />
+	<com.lz.oncon.widget.ScrollLayout
+		android:id="@+id/scrolayout" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_gravity="center_horizontal"
+		android:clickable="true" android:onClick="onClick"/>
+	<RelativeLayout android:layout_width="fill_parent" android:layout_height="45dp"
+	    android:layout_below="@id/scrolayout" android:background="#dcdcdc">
+	    <TextView android:id="@+id/app_im_multiimgs_btn" android:layout_height="fill_parent" android:layout_width="wrap_content"
+		    android:textColor="@android:color/black" android:layout_marginLeft="2dip" android:layout_marginRight="2dip"
+		    android:layout_alignParentRight="true" android:layout_centerVertical="true" 
+		    android:text="@string/confirm"/>
+		<HorizontalScrollView android:id="@+id/app_im_multiimgs_HSV" android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:fillViewport="true" android:scrollbars="none" android:layout_alignParentLeft="true" android:layout_toLeftOf="@id/app_im_multiimgs_btn"
+			android:layout_centerVertical="true" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+			<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/app_im_multiimgs_LL"
+			    android:orientation="horizontal"/>
+		</HorizontalScrollView>
+		
+	</RelativeLayout>
+</RelativeLayout>

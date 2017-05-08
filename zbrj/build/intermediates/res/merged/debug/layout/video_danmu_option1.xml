@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/video_control_title_color" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/btn_look"
+            style="@style/ts14_black_ww_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@color/white"
+            android:text="观看参数" />
+
+        <TextView
+            android:id="@+id/btn_send"
+            style="@style/ts14_black_ww_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@color/gray2"
+            android:text="发送参数" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/danmakuNum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp" >
+
+            <TextView
+                style="@style/ts14_white_ww_wh"
+                android:text="@string/video_danmu_num" />
+
+            <TextView
+                android:id="@+id/video_num"
+                style="@style/ts14_white_ww_wh"
+                android:layout_marginLeft="20dp"
+                android:text="自动" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/video_num_bar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="20"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp" 
+            android:maxHeight="2dp" android:minHeight="2dp"
+            android:progressDrawable="@drawable/po_vlc_seekbar"
+       		android:thumb="@drawable/seekbar_vlc_thumb"/>
+       
+
+        <TextView
+            android:id="@+id/font_title"
+            style="@style/ts14_white_ww_wh"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/video_font"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/font_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"  >
+
+            <TextView
+                android:id="@+id/btn_font_lit"
+                style="@style/video_danmu_option_select_btn"
+                android:text="@string/video_font_lit" />
+
+            <TextView
+                android:id="@+id/btn_font_normal"
+                style="@style/video_danmu_option_select_btn"
+                android:text="@string/video_font_normal" />
+
+            <TextView
+                android:id="@+id/btn_font_big"
+                style="@style/video_danmu_option_select_btn"
+                android:text="@string/video_font_big" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/location_title"
+            style="@style/ts14_white_ww_wh"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="@string/video_location" 
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/location_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/btn_location_up"
+                style="@style/video_danmu_option_select_btn"
+                android:text="上" />
+"
+
+            <TextView
+                android:id="@+id/btn_location_mid"
+                style="@style/video_danmu_option_select_btn"
+                android:text="@string/video_font_normal" />
+
+            <TextView
+                android:id="@+id/btn_location_down"
+                style="@style/video_danmu_option_select_btn"
+                android:text="下" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/speed_title"
+            style="@style/ts14_white_ww_wh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="2dp"
+            android:text="滚动速度" />
+
+        <LinearLayout
+            android:id="@+id/speed_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/btn_speed_fast"
+                style="@style/video_danmu_option_select_btn"
+                android:text="快" />
+
+            <TextView
+                android:id="@+id/btn_speed_normal"
+                style="@style/video_danmu_option_select_btn"
+                android:text="适当"
+                 />
+
+            <TextView
+                android:id="@+id/btn_speed_slow"
+                style="@style/video_danmu_option_select_btn"
+                android:text="慢" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tranport_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+            <TextView
+                style="@style/ts14_white_ww_wh"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/video_danmu_tranport" />
+
+            <TextView
+                android:id="@+id/video_tranport"
+                style="@style/ts14_white_ww_wh"
+                android:layout_marginLeft="20dp"
+                 />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/video_tranport_bar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:progress="100"
+            android:maxHeight="2dp" android:minHeight="2dp"
+            android:progressDrawable="@drawable/po_vlc_seekbar"
+       		android:thumb="@drawable/seekbar_vlc_thumb" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="关闭" />
+
+</RelativeLayout>

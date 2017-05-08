@@ -1,0 +1,42 @@
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+	    android:id="@+id/video_layout"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ViewStub
+            android:id="@+id/pull_to_refresh_filter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_filter_bar"
+            android:layout="@layout/view_top_filter_bar" />
+
+        <include
+            android:id="@+id/pull_to_refresh_section"
+            layout="@layout/section_flag" />
+
+        <LinearLayout
+            android:id="@+id/pull_to_refresh_list_place_holder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+			<com.lz.oncon.activity.connections.widget.pulltorefresh.PullToRefreshListView
+                    android:id="@+id/pull_to_refresh_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/border"
+                    android:dividerHeight="@dimen/border_weight"
+                    android:drawSelectorOnTop="false"
+                    ptr:ptrAnimationStyle="flip"
+                    ptr:ptrHeaderTextColor="@color/font_gray"
+                    ptr:ptrMode="pullFromStart" />
+
+            <include layout="@layout/listview_empty_view" />
+        </LinearLayout>
+    </LinearLayout>

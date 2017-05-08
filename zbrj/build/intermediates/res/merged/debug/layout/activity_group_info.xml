@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    <!-- 标题 -->
+    <com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/group_info_title"/>
+    
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    android:padding="15dp" android:orientation="vertical">
+	    <LinearLayout android:id="@+id/group_info_iconAnd_names"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:orientation="horizontal">
+	        <com.lz.oncon.app.im.ui.view.MsgRoundAngleImageView 
+	            android:id="@+id/group_info_icon"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:src="@drawable/logo"/>
+	        <LinearLayout android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical"
+	            android:layout_marginLeft="10dp">
+	            <TextView android:id="@+id/group_info_name"
+	                style="@style/ts18_black_mw_mh"
+	                android:layout_weight="1"
+	                android:text="血色修道院圣光礼拜堂"
+	                android:gravity="center_vertical"/>
+	            <TextView android:id="@+id/group_info_id"
+	                style="@style/ts16_black_mw_mh"
+	                android:layout_weight="1"
+	                android:text="12345678"
+	                android:gravity="center_vertical"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <RelativeLayout android:id="@+id/group_info_master"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:layout_marginLeft="0dp"
+		    android:layout_marginRight="0dp"
+		    style="@style/more_bg_single"
+			android:gravity="center_vertical">
+		    <TextView android:id="@+id/group_info_master_label"
+		        style="@style/ts14_black_60w_wh"
+		        android:gravity="left"
+				android:text="@string/group_info_master" />
+
+			<TextView android:id="@+id/group_info_master_name"
+			    style="@style/ts14_black_mw_wh"
+		        android:gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:ellipsize="end"
+		        android:singleLine="true"
+				android:text="大领主达里安·莫格莱尼及他的小伙伴们"
+				android:layout_toRightOf="@id/group_info_master_label"/>
+		</RelativeLayout>
+		
+	    <LinearLayout android:id="@+id/group_info_other"
+	        android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="25dp"
+		    android:layout_marginLeft="0dp"
+		    android:layout_marginRight="0dp"
+		    style="@style/more_bg_single"
+		    android:layout_below="@id/group_info_master"
+		    android:orientation="vertical">
+	        <RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="10dp"
+			    android:paddingBottom="10dp"
+				android:clickable="true" android:onClick="onClick"
+				android:gravity="center_vertical"
+				android:layout_weight="4">
+			    <TextView android:id="@+id/group_info_kind_label"
+			        style="@style/ts14_black_60w_wh"
+			        android:gravity="left"
+					android:text="@string/group_info_kind" />
+				<TextView android:id="@+id/group_info_kind_name"
+			        style="@style/ts14_black_mw_wh"
+			        android:gravity="center_vertical"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="20dp"
+			        android:singleLine="true"
+					android:text="行业交流-行业资源管理及交换"
+					android:layout_toRightOf="@id/group_info_kind_label"/>
+			</RelativeLayout>
+			<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="1px"
+			    android:orientation="horizontal"
+			    android:background="@color/grey"/>
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="10dp"
+			    android:paddingBottom="10dp"
+				android:clickable="true" android:onClick="onClick"
+				android:gravity="center_vertical"
+				android:layout_weight="4">
+			    <TextView android:id="@+id/group_info_local_label"
+			        style="@style/ts14_black_60w_wh"
+			        android:gravity="left"
+					android:text="@string/group_info_local" />
+				<TextView android:id="@+id/group_info_local_name"
+			        style="@style/ts14_black_mw_wh"
+			        android:gravity="center_vertical"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="20dp"
+			        android:singleLine="true"
+					android:text="东部大陆-提瑞斯法林地"
+					android:layout_toRightOf="@id/group_info_local_label"/>
+			</RelativeLayout>
+			<LinearLayout android:layout_width="fill_parent"
+			    android:layout_height="1px"
+			    android:orientation="horizontal"
+			    android:background="@color/grey"/>
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="10dp"
+			    android:paddingBottom="10dp"
+				android:clickable="true" android:onClick="onClick"
+				android:gravity="center_vertical"
+				android:layout_weight="4">
+			    <TextView android:id="@+id/group_info_desc_label"
+			        style="@style/ts14_black_60w_wh"
+			        android:gravity="left"
+					android:text="@string/group_info_descr" />
+				<TextView android:id="@+id/group_info_desc_name"
+			        style="@style/ts14_black_mw_wh"
+			        android:maxLength="60"
+			        android:gravity="center_vertical"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="20dp"
+					android:text="血色修道院是一座由四个区域组成的大型建筑。该修道院原本是洛丹伦王国的骄傲，宗教的朝圣之地，然而在战后成为了狂热的血色十字军在该地区的一座重要要塞。提瑞斯法的幸存者和来自远方的冒险者通常前往这里寻求庇护，每当他们经过法奥之墓时，都要在这里顶礼膜拜一番，以示对这位先辈的尊敬。"
+					android:layout_toRightOf="@id/group_info_desc_label"/>
+			</RelativeLayout>
+	    </LinearLayout>
+	    
+	    <TextView android:id="@+id/group_info_join_TV"
+	        style="@style/ts18_white_mw_wh"
+	        android:layout_below="@id/group_info_other" android:gravity="center"
+	        android:layout_marginTop="25dp" android:padding="15dp"
+	        android:background="#00dd33"
+			android:text="@string/join_group_op"
+			android:textStyle="bold" 
+			android:clickable="true" android:onClick="onClick"/>
+	</LinearLayout>
+</LinearLayout>

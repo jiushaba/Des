@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" 
+        android:layout_marginTop="3dp"
+        android:gravity="bottom">
+        <com.lb.common.widget.CircleImageView
+            android:id="@+id/video_person_head"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+             />
+        <TextView
+            android:id="@+id/video_person_nick" 
+            style="@style/ts20_white_ww_wh"
+        />
+
+    </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="3dp"
+           android:gravity="bottom|center_horizontal"
+           android:orientation="horizontal" >
+        	 <TextView
+               android:id="@+id/video_control_display_action"
+               style="@style/ts18_white_ww_wh"
+               android:text="直播准备中"
+               android:maxWidth="140dp"
+               android:singleLine="true"
+                />
+           <ImageView
+               android:layout_width="82dp"
+               android:layout_height="58dp"
+               android:src="@drawable/logo1_icon" />
+       </LinearLayout>
+
+ </RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="center_horizontal" android:background="#702e2e2e"
+    android:layout_marginTop="100dp">
+	
+	<LinearLayout android:id="@+id/pop_layout" 
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:background="@android:color/white"
+    	android:gravity="center_horizontal"
+    	android:orientation="vertical"
+    	android:layout_alignParentBottom="true">
+		<TextView android:id="@+id/pop_title"
+		    style="@style/ts18_darker_gray_ww_mh" android:padding="5dp"
+            android:text="@string/select_coll_type" android:visibility="gone"/>
+		
+		<ListView android:id="@+id/pop_listview_layout"
+		    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		android:gravity="center_horizontal"
+    		android:orientation="vertical"/>
+	</LinearLayout>
+</RelativeLayout>

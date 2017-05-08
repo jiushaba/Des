@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/common_title_bg" >
+
+        <TextView
+            android:id="@+id/friendcircle_back"
+            style="@style/common_title_IV_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/friendcircle_message"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/friendcircle_back"
+            android:gravity="center"
+            android:text="@string/fc_message_detail"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/friendcircle_comment_rl"
+        android:background="#d7d6d4" />
+
+    <RelativeLayout
+        android:id="@+id/friendcircle_comment_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/common_title_bg" >
+
+        <Button
+            android:id="@+id/friendcircle_comment_rl_btn"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/ic_but_send_bg"
+            android:text="@string/fc_comment_send"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/friendcircle_comment_rl_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@id/friendcircle_comment_rl_btn"
+            android:background="@drawable/msg_input" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/title_layout" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@+id/fc_item_avatar"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar_img_loading"
+                oncon:roundHeight="2dp"
+                oncon:roundWidth="2dp" />
+
+            <LinearLayout
+                android:id="@+id/llayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/fc_item_avatar"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fc_item_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dip"
+                        android:paddingTop="3dip"
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/share_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/fc_share_string"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fc_share_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/fc_item_txtContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:padding="5dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+
+                <GridView
+                    android:id="@+id/fc_item_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dip"
+                    android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+                    android:numColumns="3"
+                    android:padding="@dimen/image_thumbnail_spacing"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/image_thumbnail_spacing" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/fc_item_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/fc_item_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/fc_item_time"
+                        android:background="@drawable/fc_msg_item_bg"
+                        android:gravity="center_vertical"
+                        android:text="@string/delete"
+                        android:textColor="@color/friendc_textlink_color"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/fc_item_commentANDup_popup"
+                        android:layout_width="25dip"
+                        android:layout_height="18dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/fc_comment_up" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fc_item_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llayout"
+                android:background="@drawable/friendcircle_comment_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/fc_item_up_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/fc_item_comment_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="80dp"
+    android:background="@drawable/bg_connections_item"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/compNameLL"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/compName"
+            style="@style/ts16_red_ww_wh"
+            android:paddingRight="8dp" android:paddingLeft="5dp"
+    		android:paddingTop="3dp" android:paddingBottom="3dp"
+            android:text="COS比赛\u003c\u003c"/>
+        <include layout="@layout/line"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/videoLL"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="8dp" android:paddingLeft="5dp"
+    	android:paddingTop="3dp" android:paddingBottom="3dp"/>
+</LinearLayout>

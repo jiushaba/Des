@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+   	style="@style/ActivityLinearLayout">
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/addtag_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/addtag"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightImageSrc="@drawable/ic_finish" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addtag_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/addtag_ET_tag"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/input"
+            android:hint="@string/tag"
+            android:imeOptions="actionDone"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+</RelativeLayout>

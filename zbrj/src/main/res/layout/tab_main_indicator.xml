@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	>
+
+	<TextView
+	    android:id="@+id/tab_tv"
+	    style="@style/ts16_white_ww_wh"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginBottom="1dp"
+	    android:text="@string/watch" 
+	    />
+
+	<TextView
+	    android:id="@+id/tab_msg_noti"
+	    style="@style/ts16_white_ww_wh"
+	    android:layout_width="7dp" android:layout_height="7dp"
+	    android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+	    android:layout_marginTop="15dp" android:layout_marginRight="38dp"
+	    android:background="@drawable/ic_numbg_0"
+	    android:gravity="center"
+	    android:visibility="invisible" />
+
+	<ImageView
+	    android:id="@+id/tab_iv"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:src="@drawable/home_radio_button_tab1"
+	    android:layout_marginBottom="25dp" 
+	    />
+
+</RelativeLayout>

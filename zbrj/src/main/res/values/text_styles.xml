@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 10-->
+    <style name="ts10" >
+        <item name="android:textSize">10dp</item>
+    </style>
+    <style name="ts10_black" parent="@style/ts10">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts10_FF0000" parent="@style/ts10">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <style name="ts10_FF0000_mw_wh" parent="@style/ts10_FF0000">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts10_black_ww_wh" parent="@style/ts10_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 12-->
+    <style name="ts12" >
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="ts12_grey" parent="@style/ts12">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ts12_sky_blue" parent="@style/ts12">
+        <item name="android:textColor">@color/sky_blue</item>
+    </style>
+    <style name="ts12_black_white" parent="@style/ts12">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts12_black" parent="@style/ts12">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts12_white" parent="@style/ts12">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts12_333333" parent="@style/ts12">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="ts12_888888" parent="@style/ts12">
+        <item name="android:textColor">#888888</item>
+    </style>
+    <style name="ts12_aaaaaa" parent="@style/ts12">
+        <item name="android:textColor">#aaaaaa</item>
+    </style>
+    <style name="ts12_888888_1f88c2" parent="@style/ts12">
+        <item name="android:textColor">@drawable/text_color_888888_1f88c2</item>
+    </style>
+    <style name="ts12_grey_ww_wh" parent="@style/ts12_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_sky_blue_ww_wh" parent="@style/ts12_sky_blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_black_white_mw_wh" parent="@style/ts12_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_black_ww_wh" parent="@style/ts12_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_black_mw_wh" parent="@style/ts12_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_black_mw_mh" parent="@style/ts12_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts12_black_60w_wh" parent="@style/ts12_black">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_black_60w_35h" parent="@style/ts12_black">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+    <style name="ts12_white_ww_mh" parent="@style/ts12_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts12_white_ww_wh" parent="@style/ts12_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_white_mw_wh" parent="@style/ts12_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_333333_ww_wh" parent="@style/ts12_333333">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_888888_ww_wh" parent="@style/ts12_888888">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts12_aaaaaa_mw_0h" parent="@style/ts12_aaaaaa">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="ts12_888888_1f88c2_ww_wh" parent="@style/ts12_888888_1f88c2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 13-->
+    <style name="ts13" >
+        <item name="android:textSize">13dp</item>
+    </style>
+    <style name="ts13_black" parent="@style/ts13">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts13_white" parent="@style/ts13">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts13_999999" parent="@style/ts13">
+        <item name="android:textColor">#999999</item>
+    </style>
+    <style name="ts13_999999_ww_wh" parent="@style/ts13_999999">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts13_black_ww_wh" parent="@style/ts13_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts13_white_ww_wh" parent="@style/ts13_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 14-->
+    <style name="ts14" >
+        <item name="android:textSize">14dp</item>
+    </style>
+    <style name="ts14_white" parent="@style/ts14">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts14_black" parent="@style/ts14">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts14_grey" parent="@style/ts14">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ts14_333333" parent="@style/ts14">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="ts14_555555" parent="@style/ts14">
+        <item name="android:textColor">#555555</item>
+    </style>
+    <style name="ts14_888888_1f88c2" parent="@style/ts14">
+        <item name="android:textColor">@drawable/text_color_888888_1f88c2</item>
+    </style>
+    <style name="ts14_black_1f88c2" parent="@style/ts14">
+        <item name="android:textColor">@drawable/text_color_black_1f88c2</item>
+    </style>
+    <style name="ts14_999999" parent="@style/ts14">
+        <item name="android:textColor">#999999</item>
+    </style>
+    <style name="ts14_aaaaaa" parent="@style/ts14">
+        <item name="android:textColor">#aaaaaa</item>
+    </style>
+    <style name="ts14_CornflowerBlue" parent="@style/ts14">
+        <item name="android:textColor">@color/CornflowerBlue</item>
+    </style>
+    <style name="ts14_black_blue" parent="@style/ts14">
+        <item name="android:textColor">@drawable/more_app_head_text_color</item>
+    </style>
+    <style name="ts14_black_white" parent="@style/ts14">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts14_848484_white" parent="@style/ts14">
+        <item name="android:textColor">@drawable/im_thread_list_item_text2</item>
+    </style>
+    <style name="ts14_white_ww_wh" parent="@style/ts14_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_white_46w_wh" parent="@style/ts14_white">
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_white_80w_80h" parent="@style/ts14_white">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <style name="ts14_black_mw_wh" parent="@style/ts14_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_60w_wh" parent="@style/ts14_black">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_58w_28h" parent="@style/ts14_black">
+        <item name="android:layout_width">58dp</item>
+        <item name="android:layout_height">28dp</item>
+    </style>
+    <style name="ts14_black_70w_25h" parent="@style/ts14_black">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts14_black_ww_18h" parent="@style/ts14_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+    <style name="ts14_black_ww_wh" parent="@style/ts14_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_grey_ww_wh" parent="@style/ts14_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_grey_80w_wh" parent="@style/ts14_grey">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_blue_ww_wh" parent="@style/ts14_black_blue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_white_ww_wh" parent="@style/ts14_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_white_mw_wh" parent="@style/ts14_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_848484_white_ww_25h" parent="@style/ts14_848484_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts14_333333_mw_25h" parent="@style/ts14_333333">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts14_555555_ww_wh" parent="@style/ts14_555555">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_888888_1f88c2_ww_wh" parent="@style/ts14_888888_1f88c2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_black_1f88c2_ww_wh" parent="@style/ts14_black_1f88c2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_999999_mw_mh" parent="@style/ts14_999999">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts14_999999_mw_wh" parent="@style/ts14_999999">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_848484_white_mw_18h" parent="@style/ts14_848484_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+    <style name="ts14_848484_white_ww_18h" parent="@style/ts14_848484_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18dp</item>
+    </style>
+    <style name="ts14_aaaaaa_ww_wh" parent="@style/ts14_aaaaaa">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts14_CornflowerBlue_mw_wh" parent="@style/ts14_CornflowerBlue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 15-->
+    <style name="ts15" >
+        <item name="android:textSize">15dp</item>
+    </style>
+    <style name="ts15_white" parent="@style/ts15">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts15_black" parent="@style/ts15">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts15_black_white" parent="@style/ts15">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts15_grey" parent="@style/ts15">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ts15_green" parent="@style/ts15">
+        <item name="android:textColor">@color/green</item>
+    </style>
+    <style name="ts15_333333" parent="@style/ts15">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="ts15_666666" parent="@style/ts15">
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="ts15_777777" parent="@style/ts15">
+        <item name="android:textColor">#777777</item>
+    </style>
+    <style name="ts15_b5cad6" parent="@style/ts15">
+        <item name="android:textColor">#b5cad6</item>
+    </style>
+    <style name="ts15_white_ww_wh" parent="@style/ts15_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_white_ww_40h" parent="@style/ts15_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts15_white_mw_wh" parent="@style/ts15_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_white_mw_30h" parent="@style/ts15_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    <style name="ts15_black_mw_wh" parent="@style/ts15_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_black_ww_wh" parent="@style/ts15_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_black_white_mw_wh" parent="@style/ts15_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_black_white_ww_wh" parent="@style/ts15_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_grey_ww_wh" parent="@style/ts15_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_grey_mw_wh" parent="@style/ts15_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_green_ww_wh" parent="@style/ts15_green">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_333333_ww_wh" parent="@style/ts15_333333">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_666666_mw_wh" parent="@style/ts15_666666">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_777777_mw_wh" parent="@style/ts15_777777">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts15_b5cad6_ww_wh" parent="@style/ts15_b5cad6">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 16-->
+    <style name="ts16" >
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="ts16_black_white" parent="@style/ts16">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts16_black" parent="@style/ts16">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts16_white" parent="@style/ts16">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts16_white_black" parent="@style/ts16">
+        <item name="android:textColor">@drawable/login_tvbtn_text</item>
+    </style>
+    <style name="ts16_darker_gray" parent="@style/ts16">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="ts16_red" parent="@style/ts16">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="ts16_grey" parent="@style/ts16">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ts16_333333" parent="@style/ts16">
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="ts16_b3b3b3" parent="@style/ts16">
+        <item name="android:textColor">#b3b3b3</item>
+    </style>
+    <style name="ts16_ff0000" parent="@style/ts16">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+    <style name="ts16_1b56b7_white" parent="@style/ts16">
+        <item name="android:textColor">@drawable/im_thread_list_item_text2</item>
+    </style>
+    <style name="ts16_black_white_ww_wh" parent="@style/ts16_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_black_white_ww_mh" parent="@style/ts16_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_black_white_ww_44h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <style name="ts16_black_white_ww_40h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts16_black_white_mw_wh" parent="@style/ts16_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_black_white_mw_44h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+    <style name="ts16_black_white_mw_50h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts16_black_white_mw_0h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="ts16_black_white_150w_50h" parent="@style/ts16_black_white">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts16_black_mw_mh" parent="@style/ts16_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_black_80w_mh" parent="@style/ts16_black">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_black_ww_wh" parent="@style/ts16_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_black_ww_mh" parent="@style/ts16_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_black_ww_30h" parent="@style/ts16_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    <style name="ts16_black_ww_40h" parent="@style/ts16_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts16_black_ww_50h" parent="@style/ts16_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="ts16_black_mw_wh" parent="@style/ts16_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_black_150w_50h" parent="@style/ts16_black">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts16_black_80w_wh" parent="@style/ts16_black">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_black_mw_0h" parent="@style/ts16_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="ts16_black_mw_40h" parent="@style/ts16_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts16_black_mw_50h" parent="@style/ts16_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts16_333333_mw_mh" parent="@style/ts16_333333">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_333333_mw_wh" parent="@style/ts16_333333">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_333333_ww_45h" parent="@style/ts16_333333">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+    <style name="ts16_white_80w_40h" parent="@style/ts16_white">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts16_white_ww_mh" parent="@style/ts16_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_white_ww_wh" parent="@style/ts16_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_white_mw_wh" parent="@style/ts16_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_white_mw_mh" parent="@style/ts16_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts16_white_black_mw_wh" parent="@style/ts16_white_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_b3b3b3_mw_wh" parent="@style/ts16_b3b3b3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_ff0000_ww_wh" parent="@style/ts16_ff0000">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_darker_gray_ww_wh" parent="@style/ts16_darker_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_darker_gray_mw_wh" parent="@style/ts16_darker_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_red_mw_wh" parent="@style/ts16_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_red_ww_wh" parent="@style/ts16_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_grey_mw_wh" parent="@style/ts16_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts16_1b56b7_white_ww_mh" parent="@style/ts16_1b56b7_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+   
+    <!-- 18-->
+    <style name="ts18" >
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="ts18_black" parent="@style/ts18">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts18_white" parent="@style/ts18">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts18_red" parent="@style/ts18">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="ts18_black_white" parent="@style/ts18">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts18_grey" parent="@style/ts18">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="ts18_2f85e5" parent="@style/ts18">
+        <item name="android:textColor">#2f85e5</item>
+    </style>
+    <style name="ts18_6d6d6d" parent="@style/ts18">
+        <item name="android:textColor">#6d6d6d</item>
+    </style>
+    <style name="ts18_808080" parent="@style/ts18">
+        <item name="android:textColor">#808080</item>
+    </style>
+    <style name="ts18_888888" parent="@style/ts18">
+        <item name="android:textColor">#888888</item>
+    </style>
+    <style name="ts18_dadada" parent="@style/ts18">
+        <item name="android:textColor">#dadada</item>
+    </style>
+    <style name="ts18_b3b3b3" parent="@style/ts18">
+        <item name="android:textColor">#b3b3b3</item>
+    </style>
+    <style name="ts18_fff" parent="@style/ts18">
+        <item name="android:textColor">#fff</item>
+    </style>
+    <style name="ts18_darker_gray" parent="@style/ts18">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+    <style name="ts18_seagreen" parent="@style/ts18">
+        <item name="android:textColor">@color/seagreen</item>
+    </style>
+    <style name="ts18_870101" parent="@style/ts18">
+        <item name="android:textColor">#870101</item>
+    </style>
+    <style name="ts18_black_ww_mh" parent="@style/ts18_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_black_ww_wh" parent="@style/ts18_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_ww_50h" parent="@style/ts18_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts18_black_mw_50h" parent="@style/ts18_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts18_black_80w_50h" parent="@style/ts18_black">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts18_black_mw_mh" parent="@style/ts18_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_black_mw_wh" parent="@style/ts18_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_white_mw_wh" parent="@style/ts18_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_white_ww_mh" parent="@style/ts18_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_white_ww_wh" parent="@style/ts18_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_white_mw_wh" parent="@style/ts18_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_white_mw_60h" parent="@style/ts18_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+    <style name="ts18_black_white_mw_50h" parent="@style/ts18_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts18_red_mw_wh" parent="@style/ts18_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_red_ww_25h" parent="@style/ts18_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts18_grey_ww_wh" parent="@style/ts18_grey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_6d6d6d_ww_wh" parent="@style/ts18_6d6d6d">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_6d6d6d_mw_wh" parent="@style/ts18_6d6d6d">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_808080_ww_wh" parent="@style/ts18_808080">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_888888_mw_wh" parent="@style/ts18_888888">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_dadada_ww_wh" parent="@style/ts18_dadada">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_b3b3b3_mw_wh" parent="@style/ts18_b3b3b3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_fff_mw_wh" parent="@style/ts18_fff">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_white_ww_wh" parent="@style/ts18_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_white_100w_wh" parent="@style/ts18_black_white">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_black_white_mw_25h" parent="@style/ts18_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts18_black_white_ww_25h" parent="@style/ts18_black_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+    <style name="ts18_darker_gray_mw_wh" parent="@style/ts18_darker_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_darker_gray_ww_50h" parent="@style/ts18_darker_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts18_darker_gray_ww_wh" parent="@style/ts18_darker_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_darker_gray_ww_mh" parent="@style/ts18_darker_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_darker_gray_mw_mh" parent="@style/ts18_darker_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_seagreen_ww_wh" parent="@style/ts18_seagreen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_2f85e5_mw_mh" parent="@style/ts18_2f85e5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts18_870101_mw_wh" parent="@style/ts18_870101">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts18_b3b3b3_ww_wh" parent="@style/ts18_b3b3b3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 20 -->
+    <style name="ts20" >
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="ts20_black" parent="@style/ts20">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts20_red" parent="@style/ts20">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="ts20_white" parent="@style/ts20">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts20_black_white" parent="@style/ts20">
+        <item name="android:textColor">@drawable/text_color</item>
+    </style>
+    <style name="ts20_black_ww_wh" parent="@style/ts20_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts20_black_ww_50h" parent="@style/ts20_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts20_black_mw_50h" parent="@style/ts20_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts20_black_mw_wh" parent="@style/ts20_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts20_black_85w_50h" parent="@style/ts20_black">
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts20_black_60w_40h" parent="@style/ts20_black">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts20_white_ww_wh" parent="@style/ts20_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts20_white_ww_mh" parent="@style/ts20_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ts20_white_mw_wh" parent="@style/ts20_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts20_white_mw_40h" parent="@style/ts20_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="ts20_black_white_mw_wh" parent="@style/ts20_black_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts20_red_mw_wh" parent="@style/ts20_red">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 22-->
+    <style name="ts22" >
+        <item name="android:textSize">22dp</item>
+    </style>
+    <style name="ts22_white" parent="@style/ts22">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts22_black" parent="@style/ts22">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts22_FF0000" parent="@style/ts22">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <style name="ts22_494949" parent="@style/ts22">
+        <item name="android:textColor">#494949</item>
+    </style>
+    <style name="ts22_6e6e6e" parent="@style/ts22">
+        <item name="android:textColor">#6e6e6e</item>
+    </style>
+    <style name="ts22_white_ww_wh" parent="@style/ts22_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_white_mw_wh" parent="@style/ts22_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_black_ww_wh" parent="@style/ts22_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_black_mw_wh" parent="@style/ts22_black">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+        <style name="ts22_6e6e6e_ww_wh" parent="@style/ts22_6e6e6e">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_6e6e6e_mw_wh" parent="@style/ts22_6e6e6e">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_black_ww_30h" parent="@style/ts22_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    <style name="ts22_FF0000_ww_wh" parent="@style/ts22_FF0000">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts22_494949_100w_mh" parent="@style/ts22_494949">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <!-- 24-->
+    <style name="ts24" >
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="ts24_black" parent="@style/ts24">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts24_white" parent="@style/ts24">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="ts24_FF0000" parent="@style/ts24">
+        <item name="android:textColor">#FF0000</item>
+    </style>
+    <style name="ts24_black_170w_50h" parent="@style/ts24_black">
+        <item name="android:layout_width">170dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts24_black_ww_wh" parent="@style/ts24_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts24_white_200w_50h" parent="@style/ts24_white">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <style name="ts24_white_ww_wh" parent="@style/ts24_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ts24_FF0000_100w_30h" parent="@style/ts24_FF0000">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    <!-- 56-->
+    <style name="ts56" >
+        <item name="android:textSize">56dp</item>
+    </style>
+    <style name="ts56_black" parent="@style/ts56">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ts56_black_ww_wh" parent="@style/ts56_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!-- 70-->
+    <style name="ts70" >
+        <item name="android:textSize">70dp</item>
+    </style>
+    <style name="ts70_3399ff" parent="@style/ts70">
+        <item name="android:textColor">#3399ff</item>
+    </style>
+</resources>

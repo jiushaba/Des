@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="80dp"
+    android:background="@drawable/bg_connections_item"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="8dp" android:paddingLeft="5dp"
+    	android:paddingTop="3dp" android:paddingBottom="3dp">
+        <TextView android:id="@+id/compName"
+            style="@style/ts16_red_ww_wh"
+            android:text="COS比赛\u003c\u003c"/>
+        <TextView android:id="@+id/compType"
+            style="@style/ts16_black_ww_wh"
+            android:layout_marginLeft="5dp"
+            android:text="二次元"/>
+        <TextView android:id="@+id/compNum"
+            style="@style/ts14_black_ww_wh"
+            android:layout_marginLeft="5dp"
+            android:text="35876人参赛"/>
+        <TextView android:id="@+id/compOP"
+            style="@style/ts16_black_mw_wh"
+            android:gravity="right"
+            android:text="@string/release"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/left"/>
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout android:id="@+id/videoLL"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="8dp" android:paddingLeft="5dp"
+    	android:paddingTop="3dp" android:paddingBottom="3dp"/>
+</LinearLayout>

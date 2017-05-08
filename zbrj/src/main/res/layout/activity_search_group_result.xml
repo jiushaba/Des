@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_group_result_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/search_group_result_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/search_group_result"
+        oncon:leftImageSrc="@drawable/ic_back" />
+    <com.lz.oncon.widget.ElasticScrollView
+        android:id="@+id/search_group_result_LV"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"/>
+</LinearLayout>

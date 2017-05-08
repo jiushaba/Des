@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+	<!-- 标题栏 -->
+	<com.lz.oncon.widget.TitleView
+		android:id="@id/title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/enter_mobile" oncon:rightValue="@string/next"/>
+	<RelativeLayout android:layout_width="match_parent" android:layout_height="50dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_below="@id/title">
+	    <!-- 手机号 -->
+	    <EditText android:id="@+id/mobile_ET" 
+		    android:layout_marginRight="10dp" android:layout_marginLeft="10dp"
+		    style="@style/ts18_black_mw_50h"
+			android:background="@drawable/input"
+	    	android:paddingBottom="1dp" android:paddingTop="1dp"
+	        android:paddingLeft="10dp" android:paddingRight="1dp"
+	    	android:maxLength="20" android:singleLine="true"
+	    	android:inputType="phone" android:digits="1234567890"
+			android:imeOptions="actionDone" android:hint="@string/login_input_phonehint"
+			android:textStyle="bold"/>
+		<!-- 清理手机号输入 -->
+		<ImageView android:id="@+id/clear_IV" android:layout_alignRight="@+id/mobile_ET"
+		    android:layout_width="wrap_content" android:layout_height="50dp"
+		    android:src="@drawable/error"
+		    android:paddingLeft="10dp" android:paddingRight="10dp"
+		    android:clickable="true" android:onClick="onClick" android:visibility="gone"/>
+	</RelativeLayout>
+</RelativeLayout>

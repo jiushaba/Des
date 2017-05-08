@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/f_bg_lockpattern"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <com.lz.oncon.widget.lockpattern.LockPatternView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+		android:id="@+id/lpv_lock"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        />
+    
+	<TextView android:id="@+id/memo" android:layout_above="@id/lpv_lock" android:layout_centerHorizontal="true"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:textColor="@color/white" android:textSize="18sp"/>
+    
+    <TextView android:id="@+id/go2login" android:clickable="true" android:onClick="onClick"
+        android:layout_alignParentBottom="true" android:layout_marginBottom="10dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:textColor="#55557b" android:textSize="18sp"
+		android:text="@string/f_pwd_login"/>
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/imageshow_controllerayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/common_title_bg" >
+
+        <Button
+            android:id="@+id/imageshow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/ic_back" />
+
+        <Button
+            android:id="@+id/imageshow_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/imageshow_share"
+            android:background="@drawable/btn_save" />
+
+        <Button
+            android:id="@+id/imageshow_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_share" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/talk_preview_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:progress="0"
+        android:maxHeight="2.0dip"
+        android:minHeight="2.0dip"
+        android:padding="0.0dip"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar_thumb"
+        android:visibility="gone" />
+
+    <com.lz.oncon.app.im.ui.TouchView
+        android:id="@+id/talkimageshow_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/imageshow_controllerayout"
+        android:layout_above="@id/talk_preview_seekbar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/imageshow__progressbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageshow_controllerayout"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/talk_replay_icon"
+            style="@style/ts16_white_ww_mh"
+            android:gravity="center"
+            android:drawablePadding="5.0dip"
+            android:drawableRight="@drawable/publisher_replay_icon"
+            android:visibility="gone" />
+         <TextView
+            android:id="@+id/talk_replay_pause"
+            style="@style/ts16_white_ww_mh"
+            android:gravity="center"
+            android:drawablePadding="5.0dip"
+            android:drawableRight="@drawable/error"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/talk_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+        </ProgressBar>
+    </LinearLayout>
+
+</RelativeLayout>

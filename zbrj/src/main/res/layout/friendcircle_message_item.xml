@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:padding="5dp" 
+    android:background="@drawable/fc_msg_item_bg">
+
+    <com.lz.oncon.widget.HeadImageView
+        android:id="@+id/fc_item_message_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/defaultpic" />
+
+    <LinearLayout
+        android:id="@+id/fc_item_message_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" 
+        android:gravity="right|top">
+
+        <TextView
+            android:id="@+id/fc_dyminc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textSize="14dp"
+             >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/fc_dyminc_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/defaultpic"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/fc_item_message_end"
+        android:layout_toRightOf="@id/fc_item_message_head"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fc_dyminc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/friendc_textlink_color"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/fc_dyminc_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            />
+        
+        <ImageView
+            android:id="@+id/fc_dyminc_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_gravity="left"
+            android:src="@drawable/fc_up_p"
+            android:visibility="gone"
+            />
+            
+        <TextView android:id="@+id/fc_dyminc_time" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

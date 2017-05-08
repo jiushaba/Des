@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/btn"
+	android:gravity="center"
+    style="@style/ts18_2f85e5_mw_mh"
+    android:background="@drawable/btn_none_popwindow"/>

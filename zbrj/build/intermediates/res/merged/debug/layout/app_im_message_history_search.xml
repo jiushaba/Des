@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp"
+        android:background="@drawable/tbg1" >
+
+        <TextView
+            android:id="@+id/common_title_TV_left"
+            style="@style/common_title_IV_left"            
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:onClick="onClick" />
+
+        <com.lz.oncon.widget.SearchBar
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"          
+             />
+
+        <Button
+            android:id="@+id/top_search_right_txt"
+            android:layout_width="48.0dip"
+            android:layout_height="32.0dip"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_button"
+           />
+    </LinearLayout>
+
+ 
+     <View
+        android:id="@+id/im_empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:background="@color/half_transparent" >
+    </View>
+   <ListView
+        android:id="@+id/im_thread_list_DLL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:cacheColorHint="#00000000"
+        android:divider="#d7d6d4"
+        android:dividerHeight="1px"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:scrollbars="none" android:visibility="gone">
+    </ListView>
+</RelativeLayout>

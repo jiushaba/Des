@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    	<!-- 标题栏 -->
+		<com.lz.oncon.widget.TitleView
+			android:id="@id/title" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+			oncon:centerValue="@string/help"/>
+		<ScrollView 
+		    android:layout_below="@id/title"
+		    android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp">
+		    <RelativeLayout 
+		        android:layout_width="fill_parent"
+    			android:layout_height="wrap_content">
+				<TextView
+				    android:id="@+id/help_TV_1" 
+		    		style="@style/help_item"
+		    		/>
+				<TextView
+				    android:id="@+id/help_TV_2" 
+		    		android:text="@string/help_2"
+		    		android:layout_below="@id/help_TV_1"
+		    		style="@style/help_item"
+		    		/>
+				<TextView
+				    android:id="@+id/help_TV_3" 
+		    		android:text="@string/help_3"
+		    		android:layout_below="@id/help_TV_2"
+		    		style="@style/help_item"
+		    		/>
+				<TextView
+				    android:id="@+id/help_TV_4"
+				    android:text="@string/help_4" 
+		    		android:layout_below="@id/help_TV_3"
+		    		style="@style/help_item"
+		    		/>
+				<TextView
+				    android:id="@+id/help_TV_5"
+				    android:text="@string/help_5" 
+		    		android:layout_below="@id/help_TV_4"
+		    		style="@style/help_item"
+		    		/>
+		    </RelativeLayout>
+		</ScrollView>
+</RelativeLayout>

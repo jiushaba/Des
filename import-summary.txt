@@ -1,0 +1,130 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* proguard-project.txt
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+* res.rar
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+gcm.jar => com.google.android.gms:play-services:+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => zbrj\src\main\AndroidManifest.xml
+* assets\ => zbrj\src\main\assets\
+* libs\armeabi\libavcodec.so => zbrj\src\main\jniLibs\armeabi\libavcodec.so
+* libs\armeabi\libavformat.so => zbrj\src\main\jniLibs\armeabi\libavformat.so
+* libs\armeabi\libavutil.so => zbrj\src\main\jniLibs\armeabi\libavutil.so
+* libs\armeabi\libBaiduMapSDK_v3_3_0_15.so => zbrj\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_3_0_15.so
+* libs\armeabi\libeasemobservice.so => zbrj\src\main\jniLibs\armeabi\libeasemobservice.so
+* libs\armeabi\libilbc-codec.so => zbrj\src\main\jniLibs\armeabi\libilbc-codec.so
+* libs\armeabi\libjniavcodec.so => zbrj\src\main\jniLibs\armeabi\libjniavcodec.so
+* libs\armeabi\libjniavformat.so => zbrj\src\main\jniLibs\armeabi\libjniavformat.so
+* libs\armeabi\libjniavutil.so => zbrj\src\main\jniLibs\armeabi\libjniavutil.so
+* libs\armeabi\libjniopencv_core.so => zbrj\src\main\jniLibs\armeabi\libjniopencv_core.so
+* libs\armeabi\libjnipostproc.so => zbrj\src\main\jniLibs\armeabi\libjnipostproc.so
+* libs\armeabi\libjniswresample.so => zbrj\src\main\jniLibs\armeabi\libjniswresample.so
+* libs\armeabi\libjniswscale.so => zbrj\src\main\jniLibs\armeabi\libjniswscale.so
+* libs\armeabi\liblocSDK5.so => zbrj\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\armeabi\libopencv_core.so => zbrj\src\main\jniLibs\armeabi\libopencv_core.so
+* libs\armeabi\libpostproc.so => zbrj\src\main\jniLibs\armeabi\libpostproc.so
+* libs\armeabi\libswresample.so => zbrj\src\main\jniLibs\armeabi\libswresample.so
+* libs\armeabi\libswscale.so => zbrj\src\main\jniLibs\armeabi\libswscale.so
+* libs\armeabi\libtbb.so => zbrj\src\main\jniLibs\armeabi\libtbb.so
+* libs\baidumapapi_v3_3_0.jar => zbrj\libs\baidumapapi_v3_3_0.jar
+* libs\commons-codec.jar => zbrj\libs\commons-codec.jar
+* libs\easemobchat_2.2.0.jar => zbrj\libs\easemobchat_2.2.0.jar
+* libs\ffmpeg-2.5.1-0.10.jar => zbrj\libs\ffmpeg-2.5.1-0.10.jar
+* libs\javacpp-0.10.jar => zbrj\libs\javacpp-0.10.jar
+* libs\locSDK_5.0.jar => zbrj\libs\locSDK_5.0.jar
+* libs\opencv-2.4.10-0.10fix.jar => zbrj\libs\opencv-2.4.10-0.10fix.jar
+* libs\pinyin4j-2.5.0.jar => zbrj\libs\pinyin4j-2.5.0.jar
+* libs\sunjce_provider.jar => zbrj\libs\sunjce_provider.jar
+* libs\universal-image-loader-1.9.4.jar => zbrj\libs\universal-image-loader-1.9.4.jar
+* libs\videoinput-0.200-0.10.jar => zbrj\libs\videoinput-0.200-0.10.jar
+* lint.xml => zbrj\lint.xml
+* res\ => zbrj\src\main\res\
+* src\ => zbrj\src\main\java\
+* src_common\ => zbrj\src\main\java\
+* src_danmu\ => zbrj\src\main\java\
+* src_fc\ => zbrj\src\main\java\
+* src_im\ => zbrj\src\main\java\
+* src_im_api\ => zbrj\src\main\java\
+* src_interface\ => zbrj\src\main\java\
+* src_nineoldandroid\ => zbrj\src\main\java\
+* src_video\ => zbrj\src\main\java\
+* src_zbrj\ => zbrj\src\main\java\
+* test\ => zbrj\src\main\java\
+* zbrj_share\ => zbrj\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Missing Google Repository:
+--------------------------
+The Google Play Services library is installed from a special Maven
+Repository, which should be installed via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Google Repository".
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

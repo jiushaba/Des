@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pdetail_menu_height">120dip</dimen>
+    <dimen name="audio_dialog_width">133dip</dimen>
+    <dimen name="audio_dialog_height">125dip</dimen>
+    <dimen name="news_big_height">180dip</dimen>
+    <dimen name="news_total_width">280dip</dimen>
+    <dimen name="news_little_height">60dip</dimen>
+    <dimen name="news_little_bottom">70dip</dimen>
+    <dimen name="news_big_padding">15dip</dimen>
+    <dimen name="login_input_width">186dip</dimen>
+    <dimen name="login_input_layoutwidth">256dip</dimen>
+    <dimen name="login_input_marginTop">10dip</dimen>
+    <dimen name="login_input_layoutheight">50dip</dimen>
+    <dimen name="login_input_paddingL">10dip</dimen>
+    <dimen name="weibo_bind_top">20dip</dimen>
+    <dimen name="login_input_paddingLT">90dip</dimen>
+    <dimen name="pic_nine_padding">1dip</dimen>
+    <dimen name="enter_emp_editpl">8dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="personal_menu_itemwidth">60dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">5dp</dimen>
+    <dimen name="image_thumbnail_spacing_1">10dp</dimen>
+    <dimen name="popmenu_width">160.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+    <dimen name="listviewmeasurelength">91dip</dimen>
+    <dimen name="listviewdrivierlength">1dip</dimen>
+    <dimen name="listviewmeasure_recommendlength">70dip</dimen>
+    <dimen name="height_10dp">10dp</dimen>
+    <dimen name="im_ad_height">100dp</dimen>
+    <dimen name="elasticscrollview_listview_padding_top">0dp</dimen>
+    <dimen name="elasticscrollview_listview_padding_left">5dp</dimen>
+    <dimen name="elasticscrollview_listview_padding_right">5dp</dimen>
+    <dimen name="elasticscrollview_listview_padding_bottom">10dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp87">87dp</dimen>
+    <dimen name="dp8">8dp</dimen>
+    
+    <dimen name="common_title_height">50dp</dimen>
+    <dimen name="blog_image_height">50dp</dimen>
+    <dimen name="blog_image_width">50dp</dimen>
+    <dimen name="app_im_msgbg_padding_top">0dp</dimen>
+    <dimen name="app_im_msgbg_padding_bottom">20dp</dimen>
+    <dimen name="app_im_msgbg_padding_short">0dp</dimen>
+    <dimen name="app_im_msgbg_padding_long">20dp</dimen>
+    <dimen name="app_im_msg_otherwidth">95dp</dimen>
+    <dimen name="public_account_list_item_width">100dp</dimen>
+    <dimen name="public_account_list_item_height">100dp</dimen>
+    
+    
+    
+    
+    <!-- 人脉-->
+    <dimen name="height_top_filter_bar">48.0dip</dimen>
+    <dimen name="font_huge">18.0sp</dimen>
+    <dimen name="font_label">14.0sp</dimen>
+    <dimen name="font_large">16.0sp</dimen>
+    <dimen name="font_middle">15.0sp</dimen>
+    <dimen name="font_normal">14.0sp</dimen>
+    <dimen name="font_small">12.0sp</dimen>
+    <dimen name="border_large_weight">1.0dip</dimen>
+    <dimen name="font_button">16.0sp</dimen>
+    <dimen name="title_bar_height">50.0dip</dimen>
+    <dimen name="font_top_title">18.0sp</dimen>
+    <dimen name="border_weight">1.0px</dimen>
+    <dimen name="height_bottom_button">50.0dip</dimen>
+    <dimen name="height_like_animation_height">27.0dip</dimen>
+    <dimen name="height_like_animation_move">20.0dip</dimen>
+    <dimen name="height_like_animation_width">46.0dip</dimen>
+    <dimen name="margin_vertical_page">24.0dip</dimen>
+     <dimen name="height_avatar_big">70.0dip</dimen>
+    <dimen name="height_avatar_normal">58.0dip</dimen>
+    <dimen name="height_avatar_small">26.0dip</dimen>
+    <dimen name="line_space_normal">4.0dip</dimen>
+    <dimen name="height_top_tab_bar">52.0dip</dimen>
+    <dimen name="height_form_item">72.0dip</dimen>
+    <dimen name="form_item_middle_margin_weight">20.0dip</dimen>
+    <dimen name="padding_text">16.0dip</dimen>
+    <dimen name="height_pop_menu_item">60.0dip</dimen>
+    
+     <!-- 下拉控件 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">25dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">10dp</dimen>
+    <dimen name="header_footer_internal_padding">20dp</dimen>
+
+</resources>

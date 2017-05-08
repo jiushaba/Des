@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+
+    <!-- 标题栏 -->
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/set_right"
+        oncon:leftImageSrc="@drawable/ic_back" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+			<!-- 不看他的朋友圈开关 -->
+		    <RelativeLayout style="@style/more_bg_none" android:layout_marginTop="10dp">
+				<TextView style="@style/more_item_title" android:text="@string/hide_user_circle"/>
+				<ToggleButton android:id="@+id/togglebutton_hideusercircle"
+		        	android:layout_width="wrap_content" android:layout_height="30dip"
+					android:layout_alignParentRight="true" android:layout_centerVertical="true"
+					android:textOn="" android:textOff=""
+		            android:background="@drawable/btn_switch"
+		            android:visibility="gone"/>
+			</RelativeLayout>
+			<TextView style="@style/more_bg_memo" android:text="@string/hide_user_circle_memo"/>
+			<!-- 加入黑名单开关 -->
+		    <RelativeLayout style="@style/more_bg_top" android:visibility="gone">
+				<TextView style="@style/more_item_title" android:text="@string/add_black_user"/>
+				<ToggleButton android:id="@+id/togglebutton_addblackuser"
+		        	android:layout_width="wrap_content" android:layout_height="30dip"
+					android:layout_alignParentRight="true" android:layout_centerVertical="true"
+		            android:background="@drawable/btn_switch"
+		            android:textOn="" android:textOff=""
+		            android:visibility="gone"/>
+			</RelativeLayout>
+			<TextView style="@style/more_bg_memo" android:text="@string/add_black_user_memo"/>
+			<LinearLayout android:layout_width="match_parent" android:layout_height="10dp" android:orientation="vertical"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/im_thread_list_item_bg"
+        android:padding="2dip" >
+
+        <LinearLayout
+            android:id="@+id/search_head_ll"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp" >
+
+            <com.lz.oncon.widget.HeadImageView
+                android:id="@+id/search_head"
+                android:layout_width="44dip"
+                android:layout_height="44dip"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:maxHeight="44dip"
+                android:maxWidth="44dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar_img_loading" />
+
+            <LinearLayout
+                android:id="@+id/search_group_head_ll"
+                android:layout_width="44dip"
+                android:layout_height="44dip"
+                android:layout_gravity="center"
+                android:background="@drawable/grouprenbg"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/item_head1"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        oncon:roundHeight="2dp"
+                        oncon:roundWidth="2dp" />
+
+                    <com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/item_head2"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="1dip"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        oncon:roundHeight="2dp"
+                        oncon:roundWidth="2dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dip"
+                    android:orientation="horizontal" >
+
+                    <com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/item_head3"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        oncon:roundHeight="2dp"
+                        oncon:roundWidth="2dp" />
+
+                    <com.lz.oncon.widget.HeadImageView
+                        android:id="@+id/item_head4"
+                        android:layout_width="22dip"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="1dip"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        oncon:roundHeight="2dp"
+                        oncon:roundWidth="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/search_head_ll"
+            android:orientation="vertical"
+            android:paddingRight="20dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/search_name"
+                    style="@style/ts16_black_white_ww_wh"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:paddingTop="2dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/text_right"
+                    android:layout_alignParentLeft="true" >
+
+                    <TextView
+                        android:id="@+id/search_position"
+                        style="@style/ts14_black_white_mw_wh"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/search_dep"
+                        style="@style/ts14_black_white_mw_wh"
+                        android:paddingLeft="5dp"
+                         />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/left"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

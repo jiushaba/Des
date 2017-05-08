@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/margin_vertical_page"
+    android:paddingLeft="48.0dip"
+    android:paddingRight="48.0dip"
+    android:paddingTop="@dimen/margin_vertical_page" >
+
+    <ImageView
+        android:id="@+id/block_icon"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/block_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8.0dip"
+        android:layout_toRightOf="@id/block_icon"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/font_gray"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/block_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/block_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24.0dip"
+        android:background="@drawable/bg_block_btn"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="24.0dip"
+        android:paddingRight="24.0dip"
+        android:paddingTop="8.0dip"
+        android:textColor="@color/font_on_dark"
+        android:textSize="@dimen/font_large" />
+
+</RelativeLayout>

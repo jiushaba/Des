@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <style name="MyListView" parent="@android:style/Widget.ListView">
+	    <item name="android:overScrollFooter">@null</item>
+    </style>
+    <style name="MyExpandableListView" parent="@android:style/Widget.ExpandableListView">
+	    <item name="android:overScrollFooter">@null</item>
+    </style>
+    
+    <style name="ContentOverlay" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/MyListView</item>
+		<item name="android:expandableListViewStyle">@style/MyExpandableListView</item>
+    </style>
+    
+    <style name="ContentOverlayTranslucent" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:listViewStyle">@style/MyListView</item>
+		<item name="android:expandableListViewStyle">@style/MyExpandableListView</item>
+    </style>
+</resources>

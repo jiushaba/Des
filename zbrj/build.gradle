@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "25.0.0"
+
+    lintOptions { abortOnError false }
+
+    defaultConfig {
+        applicationId "com.xuanbo.xuan"
+        minSdkVersion 9
+        targetSdkVersion 16
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':social_sdk_library_project')
+    compile project(':videoplayer')
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.google.android.gms:play-services:+'
+    compile files('libs/baidumapapi_v3_3_0.jar')
+    compile files('libs/commons-codec.jar')
+    compile files('libs/easemobchat_2.2.0.jar')
+    compile files('libs/ffmpeg-2.5.1-0.10.jar')
+    compile files('libs/javacpp-0.10.jar')
+    compile files('libs/locSDK_5.0.jar')
+    compile files('libs/opencv-2.4.10-0.10fix.jar')
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile files('libs/sunjce_provider.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/videoinput-0.200-0.10.jar')
+}

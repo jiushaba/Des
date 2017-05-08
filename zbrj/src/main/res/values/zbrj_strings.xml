@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_1">炫</string>
+    <string name="app_name_2">播</string>
+    <string name="xiao">消</string>
+    <string name="xi">息</string>
+    
+    <string name="xuanbotuandui_id">900</string>
+    <string name="haibao_id">901</string>
+    <string name="xuanbotuandui_name">炫播团队</string>
+    <string name="haibao_name">海报</string>
+    
+    <string name="networktimeout">网络连接超时，请检查您的网络环境</string>
+	<string name="watch_num">%1$d</string>
+	<string name="distance">%1$d</string>
+	<string name="bullet_num">幕%1$d</string>
+	<string name="up_num">赞%1$d</string>
+	<string name="login_zbrj">登录</string>
+	<string name="live">直播</string>
+	<string name="playback">回放</string>
+	<string name="competition">比赛</string>
+	<string name="billildboard">排行榜</string>
+	<string name="fans">粉丝</string>
+	<string name="focus">关注</string>
+	
+	<string name="friend_fmt">好友 %1$s</string>
+	<string name="friend_fmt1">共 %1$s位好友</string>
+	<string name="fans_up_fmt">粉丝%1$s \u2191 %2$s</string> 
+	<string name="fans_fmt">粉丝 %1$s</string>
+	<string name="fans_fmt1">共 %1$s位粉丝</string>
+	<string name="fans_down_fmt">粉丝%1$s \u2193 %2$s</string>
+	<string name="score_fmt">积分 %1$s</string>
+	<string name="focus_fmt">关注  %1$s</string>
+	<string name="location_fmt">地区  %1$s</string>
+	<string name="broardcast_fmt">直播  %1$s</string>
+	
+	<string name="watchersnum_fmt">播%1$s</string>
+	<string name="upnum_fmt">赞%1$s</string>
+	<string name="bulletsnum_fmt">幕%1$s</string>
+	<string name="disance_mile">%1$skm</string>
+	<string name="disance_meter">%1$sm</string>
+	<string name="broadcasting_dairy">直播日记</string>
+	<string name="live_broadcast">正在直播</string>
+	<string name="recorded_broadcast">正在录播</string>
+	<string name="channel_manage">频道管理</string>
+	<string name="filter">筛选</string>
+	<string name="watch_history">观看历史</string>
+	<string name="click_add_channel">点击添加频道</string>
+	<string name="subscribe_my_category">我的频道</string>
+	<string name="subscribe_more_category">更多频道</string>
+	<string name="subscribe_manager_category_info">单击增删频道</string>
+	<string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+	<string name="all_clear">全部清除</string>
+	<string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+	<string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+    <string name="footprint">足迹</string>
+    <string name="log">日志</string>
+    <string name="qry_video_count">查询发布视频数量</string>
+    <string name="memo_label">备注及标签</string>
+    <string name="set_special_focus">设为特别关注</string>
+    <string name="recommand_to_friend">把TA推荐给朋友</string>
+    <string name="dont_let_ta_view_my_footprint">不让TA看我</string>
+    <string name="let_ta_view_my_footprint">允许TA看我的足迹</string>
+    <string name="qry_view_my_footprint">查询是否允许TA看我的足迹</string>
+    <string name="msg_no_noti">消息免打扰</string>
+    <string name="find_msg_record">查找聊天记录</string>
+    <string name="blacklist">黑名单列表</string>
+    <string name="add_blacklist">加入黑名单</string>
+    <string name="cancel_blacklist">取消黑名单</string>
+    <string name="set_focus">设为关注</string>
+    <string name="cancel_focus">取消关注</string>
+    <string name="personal_sign">个性签名</string>
+    <string name="search_by_tag">按标签搜索</string>
+    <string name="hot_word_recommend">热词推荐</string>
+    
+    <string name="live_broadcasting">直播中</string>
+    <string name="watching">观看中</string>
+    <string name="invite_watch">邀请你看</string>
+    <string name="release">解除</string>
+    <string name="set_top">置顶</string>
+    <string name="back">返回</string>
+    <string name="take_part_in">参加</string>
+    <string name="rule">规则</string>
+    
+    <string name="comp_name_fmt">%1$s\u003c\u003c</string>
+    <string name="comp_num_fmt">%1$s人参赛</string>
+    <string name="search">搜索</string>
+    <string name="history">历史</string>
+    <string name="collect">收藏</string>
+    <string name="channel">频道</string>
+    <string name="watch_only">只看</string>
+    <string name="hot">热门</string>
+    <string name="recommend">推荐</string>
+    <string name="friend">好友</string>
+    <string name="nearby">附近</string>
+    <string name="all">全部</string>
+    <string name="Network_error">网络出错</string>
+    <string name="please_check">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
+    <string name="Making_sure_your_location">正在确定你的位置...</string>
+    <string name="note_information">备注信息</string>
+    <string name="note_name_hint">请输入备注名</string>
+    <string name="set_note_name">设置备注名</string>
+    <string name="get_note_name">获取备注名</string>
+    <string name="sign">个性签名</string>
+    <string name="sign_hint">请输入签名</string>
+    
+    <string name="recommand_friend_msg_fmt">%1$s向你推荐好友%2$s</string>
+    <string name="recommand_friend_msg_fmt2">你向%1$s推荐好友%2$s</string>
+    <string name="invite_video_msg_fmt">邀请你观看“%1$s”的《%2$s》，点击进入</string>
+    <string name="invite_video_msg_fmt2">邀请你观看“%1$s”的《%2$s》</string>
+    <string name="friend_status_msg_fmt">%1$s正在进行直播，点击进入相应视频</string>
+    <string name="friend_status_msg_fmt2">%1$s正在观看，点击进入相应视频</string>
+    
+    <string name="relative_msg_records">%1$s条相关的聊天记录</string>
+    <string name="new_msg_noti_fmt1">[%1$s条]</string>
+    
+    <string name="stranger">陌生人</string>
+    <string name="user">用户</string>
+    <string name="video">视频</string>
+    
+    <string name="female_sign">\u2640</string>
+    <string name="male_sign">\u2642</string>
+    
+    <string name="edit_info">编辑资料</string>
+    <string name="update">修改</string>
+    <string name="update_head">更改头像</string>
+    <string name="privacy_set">隐私设置</string>
+    <string name="about_app">关于炫播</string>
+    <string name="add_special_friend">加为密友</string>
+    
+    <string name="new_msg_noti_fmt">新消息 %1$s条</string>
+    <string name="history_msg_fmt">共 %1$s条消息</string>
+    <string name="history_msg">历史消息</string>
+    <!--<string name="save">保存</string>-->
+    <string name="login_protocol">点击开启，表示已经接受《<u>用户协议</u>》</string>
+    <string name="no_zb_memo">暂时没有直播:(\n右滑观看回放</string>
+    <string name="no_hf_memo">暂时没有回放:(\n右滑观看比赛\n左滑观看直播</string>
+    <string name="no_bs_memo">暂时没有比赛:(\n左滑观看回放</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="63dp"
+    android:layout_height="90dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+     >
+
+    <RelativeLayout
+        android:id="@+id/llayout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/baidu" />
+
+        <TextView
+            android:id="@+id/noti"
+            style="@style/ts14_white_ww_wh"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:visibility="gone"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/llayout"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/ts14_black_58w_28h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLength="4"
+            android:maxWidth="56dp"
+            android:singleLine="true"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+</RelativeLayout>

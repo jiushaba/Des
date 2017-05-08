@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="@drawable/tabbar_bg" >
+
+    <Button
+        android:id="@+id/more_image_button_ok"
+        style="@style/ts16_black_ww_40h"
+        android:layout_alignParentRight="true"
+		android:layout_centerInParent="true"
+        android:text="完成"
+        android:gravity="center"
+        android:background="@drawable/ic_but_send_bg"
+        android:layout_marginRight="5dip"
+        />
+
+    <HorizontalScrollView 
+        android:id="@+id/more_image_scrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/more_image_button_ok"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"        
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/more_image_selectedlist_Layout_list"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+             />
+    </HorizontalScrollView>
+
+</RelativeLayout>

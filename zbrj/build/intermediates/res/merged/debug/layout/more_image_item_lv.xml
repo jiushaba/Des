@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+    
+    <ImageView
+        android:id="@+id/more_image_item_lv_iv"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:src="@drawable/defaultpic"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/more_image_item_lv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="25dip"
+        android:layout_toRightOf="@id/more_image_item_lv_iv"
+        android:maxLines="2"
+        android:textColor="@android:color/black"
+         />
+    <ImageView
+        android:id="@+id/more_image_item_lv_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left"
+        android:layout_gravity="right"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

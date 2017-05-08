@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout">
+    <com.lz.oncon.widget.TitleView
+		android:id="@+id/join_group_title" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" oncon:leftImageSrc="@drawable/ic_back"
+		oncon:centerValue="@string/join_group"/>
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="10dp"
+	    android:layout_below="@id/join_group_title">
+	    <TextView android:id="@+id/search_group_tips_view"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="20dp"
+	        android:paddingLeft="2dp"
+	        android:text="@string/join_group_tips"/>
+	    <RelativeLayout android:layout_below="@id/search_group_tips_view"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="10dp">
+	        <RelativeLayout android:id="@+id/join_group_searchBar"
+	            android:layout_width="fill_parent"
+	            android:layout_height="35dp"
+		 		android:layout_marginRight="10dp"
+		 		android:background="#ffffff"
+		      	android:layout_toLeftOf="@+id/join_group_searchBtn">
+	            <EditText android:id="@+id/join_group_searchEdit"
+		            android:layout_height="35dp"
+		            android:layout_width="fill_parent"
+		            android:background="@drawable/msg_input"
+		            android:inputType="text"
+		            android:paddingLeft="3dp"
+		            android:layout_alignParentLeft="true"/>
+	            <Button android:id="@+id/join_group_search_clear"
+	                android:layout_height="20dp"
+	                android:layout_width="20dp"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/error"
+	                android:layout_alignRight="@id/join_group_searchEdit"
+	                android:layout_marginRight="3dp"/>
+	        </RelativeLayout>
+	        <Button android:id="@+id/join_group_searchBtn"
+	            android:layout_height="35dp"
+	            android:layout_width="60dp"
+	            android:background="@color/sky_blue"
+	            android:textColor="@color/white"
+	            android:layout_alignParentRight="true"
+	            android:text="@string/look_up"/>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

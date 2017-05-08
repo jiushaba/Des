@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_bar_whole_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@drawable/common_title_bg"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/menu_bar_gone_button"
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:id="@+id/menu_bar_left_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center"
+        android:minWidth="@dimen/title_bar_height"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <Button
+            android:id="@+id/menu_bar_back_btn"
+            android:layout_width="32.0dip"
+            android:layout_height="32.0dip"
+            android:background="@drawable/navi_back_icon"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/menu_bar_left_btn"
+            android:layout_width="80.0dip"
+            android:layout_height="32.0dip"
+            android:layout_gravity="left|center"
+            android:background="@drawable/top_btn_right_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/font_top_btn"
+            android:textSize="@dimen/font_button"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/menu_bar_title"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_top_title"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/menu_bar_right_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center"
+        android:minWidth="@dimen/title_bar_height"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@+id/right_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_gravity="right|center"
+            android:drawableRight="@drawable/icon_down_white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_middle"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/menu_bar_right_btn"
+            android:layout_width="80.0dip"
+            android:layout_height="32.0dip"
+            android:layout_gravity="right|center"
+            android:background="@drawable/top_btn_right_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/font_top_btn"
+            android:textSize="@dimen/font_button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/menu_bar_more_btn"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:background="@drawable/more_icon"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:gravity="center_vertical"
+    android:padding="2dp">
+    <com.lz.oncon.app.im.ui.view.MsgRoundAngleImageView
+        android:id="@+id/search_group_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/head_mygroup"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"/>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"
+	    android:layout_marginLeft="5dp" android:orientation="vertical"
+	    android:padding="2dp">
+	    <TextView android:id="@+id/search_group_item_name"
+	        style="@style/ts15_black_mw_wh"
+	        android:singleLine="true" 
+	        android:textStyle="bold" 
+	        android:text="lqtt"/>
+	    <TextView android:id="@+id/search_group_item_groudCount"
+	        style="@style/ts12_black_mw_wh"
+	        android:singleLine="true" android:layout_marginTop="5dp"
+	        android:text="1人"/>
+		<TextView android:id="@+id/search_group_item_groudDes"
+		    style="@style/ts12_black_mw_wh"
+	        android:singleLine="true" android:layout_marginTop="5dp"
+	        android:text="注册上级编号"/>
+	</LinearLayout>
+</LinearLayout>

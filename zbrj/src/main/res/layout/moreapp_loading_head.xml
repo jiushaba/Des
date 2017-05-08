@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="60dp" 
+	android:gravity="center">
+	
+    <ImageView android:id="@+id/headIV"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:src="@drawable/arrow"/>
+    
+    <ImageView android:id="@+id/headprogress"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:scaleType="center"
+	    android:src="@drawable/sync_msg_loading" android:visibility="gone" />
+	
+	<TextView android:id="@+id/headTV"
+	    style="@style/ts20_black_ww_wh"
+		android:padding="5.0dp" 
+		android:text="@string/release_refresh" />
+
+</LinearLayout>

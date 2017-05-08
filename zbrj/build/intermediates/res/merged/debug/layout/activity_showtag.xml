@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout" >
+
+    <!-- 标题栏 -->
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/show_tag_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/personal_label"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <com.lz.oncon.widget.AutoWrapViewGroup
+            android:id="@+id/AWVG_tag_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </ScrollView>
+
+</LinearLayout>

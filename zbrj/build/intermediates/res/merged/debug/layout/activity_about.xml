@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    style="@style/ActivityLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.lz.oncon.widget.TitleView
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            oncon:centerValue="@string/focus"
+            oncon:leftImageSrc="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo_login" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/ts18_black_ww_wh"
+                android:text="炫播Xuan" />
+
+            <TextView
+                android:id="@+id/version"
+                style="@style/ts18_black_ww_wh"
+                android:layout_marginLeft="10dp"
+                android:text="β3.2.6" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/ts18_black_ww_wh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="功能介绍" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/ts18_black_ww_wh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="帮助与反馈" />
+    </LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical" >
+
+		<TextView
+		    android:id="@+id/textView4"
+		    style="@style/ts18_black_ww_wh"
+		    android:text="炫播软件许可服务协议" 
+		    android:layout_marginBottom="10dp"/>
+
+		<TextView
+		    android:id="@+id/textView5"
+		    style="@style/ts18_black_ww_wh"
+		    android:layout_marginBottom="10dp"
+		    android:text="深圳博扬昆仑影视文化公司 版权所有" />
+        
+	</LinearLayout>
+
+</RelativeLayout>

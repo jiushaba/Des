@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e9e8e6" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/share_at_who"
+        oncon:leftImageSrc="@drawable/ic_back"
+        oncon:rightImageSrc="@drawable/ic_finish" />
+
+    <EditText
+        android:id="@+id/choose_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_margin="6dp"
+        android:background="@drawable/search_input"
+        android:hint="@string/share_search"
+        android:visibility="gone" />
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/choose_search"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#e9e8e6"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="#e9e8e6"
+                android:gravity="center_vertical" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="6dp" >
+
+                <LinearLayout
+                    android:id="@+id/choose_sina_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <!-- sina current at start -->
+
+                    <LinearLayout
+                        android:id="@+id/choose_sina_friendlist_ated"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e9e8e6"
+                            android:text="@string/share_current_at_attention" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/choose_sina_lv_ated"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#e6e5e3"
+                        android:dividerHeight="1dp"
+                        android:visibility="gone" />
+                    <!-- sina current at end -->
+
+                    <TextView
+                        android:id="@+id/choose_sina_no_data"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/share_get_attention_fail"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/choose_sina_pb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/choose_sina_friendlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e9e8e6"
+                            android:text="@string/share_friend_list" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/choose_sina_lv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#e6e5e3"
+                        android:dividerHeight="1dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/choose_tencent_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+                    <!-- tencent current at start -->
+
+                    <LinearLayout
+                        android:id="@+id/choose_tencent_friendlist_ated"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e9e8e6"
+                            android:text="@string/share_current_at_attention" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/choose_tencent_lv_ated"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="#e6e5e3"
+                        android:dividerHeight="1dp"
+                        android:visibility="gone" />
+                    <!-- tencent current at end -->
+
+                    <TextView
+                        android:id="@+id/choose_tencent_no_data"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/share_get_attention_fail"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/choose_tencent_pb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/choose_tencent_friendlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#e9e8e6"
+                            android:text="@string/share_friend_list" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e5e3" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/choose_tencent_lv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:divider="#e6e5e3"
+                        android:dividerHeight="1dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

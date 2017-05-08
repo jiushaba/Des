@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login" >
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp" >
+    <RelativeLayout
+        android:id="@+id/logonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo_login" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_input_marginTop"
+        android:gravity="top" >
+
+	   <LinearLayout
+	       android:layout_width="0dp"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       android:gravity="top"
+	       android:orientation="vertical" >
+
+       <EditText android:id="@+id/mobile_ET" 
+		    style="@style/ts18_black_mw_50h"
+	    	android:paddingBottom="1dp" android:paddingTop="1dp"
+	        android:paddingLeft="10dp" android:paddingRight="1dp"
+	    	android:maxLength="20" android:singleLine="true"
+	    	android:inputType="phone" android:digits="1234567890"
+			android:imeOptions="actionDone" android:hint="@string/login_input_phonehint"
+			android:background="@drawable/bg_corner_left_white7"
+			android:textStyle="bold"/>
+       <EditText
+        android:id="@+id/check_code_ET"
+        style="@style/ts18_black_mw_50h"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corner_all_white7"
+        android:digits="1234567890"
+        android:hint="@string/please_enter_verifycode"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+       <EditText
+        android:id="@+id/password_ET"
+        style="@style/ts18_black_mw_50h"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_corner_all_white7"
+        android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+        android:hint="@string/login_input_pwdhint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+       
+       </LinearLayout>
+       <LinearLayout 
+            android:layout_width="91dp"
+        	android:layout_height="@dimen/login_input_layoutheight">
+           <TextView
+		    android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#340000"
+            android:text=""
+		    />
+        <TextView
+            android:id="@+id/send_verificode"
+            style="@style/ts18_black_mw_50h"
+            android:layout_width="90dp"
+            android:background="@drawable/bg_corner_right_white7"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:singleLine="true"
+            android:text="@string/sendverificode"
+            android:textColor="#340000"
+            />
+       </LinearLayout>
+		
+
+    </LinearLayout>
+
+   <TextView
+       android:id="@+id/btn_register"
+       android:layout_width="100dp"
+       android:layout_height="@dimen/login_input_layoutheight"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/inputLayout"
+       android:layout_margin="2dp"
+       android:background="@drawable/bg_corner_peachy"
+       android:clickable="true"
+       android:ellipsize="end"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:singleLine="true"
+       android:text="@string/register"
+       android:textColor="#FFFFFF"
+       android:textSize="20sp" />
+    <TextView
+       android:id="@+id/btn_getpassword"
+       android:layout_width="100dp"
+       android:layout_height="@dimen/login_input_layoutheight"
+       android:layout_alignParentRight="true"
+       android:layout_below="@+id/inputLayout"
+       android:layout_margin="2dp"
+       android:background="@drawable/bg_corner_peachy"
+       android:clickable="true"
+       android:ellipsize="end"
+       android:gravity="center"
+       android:onClick="onClick"
+       android:singleLine="true"
+       android:text="@string/confirm"
+       android:textColor="#FFFFFF"
+       android:textSize="20sp"
+       android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/btn_protocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_register"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+         android:onClick="onClick"
+        android:textSize="15sp"
+        android:text="@string/login_protocol" 
+        android:visibility="gone"/>
+     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_protocal"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/bg_biaoyu" />
+     
+    </RelativeLayout>
+
+</RelativeLayout>

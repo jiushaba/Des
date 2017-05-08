@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oncon="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.lz.oncon.widget.TitleView
+        android:id="@+id/locInfo_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        oncon:centerValue="@string/location"
+        oncon:leftImageSrc="@drawable/ic_back" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/locInfo_title"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5" >
+
+            <com.baidu.mapapi.MapView
+                android:id="@+id/loc_map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+        </FrameLayout>
+        <ListView android:id="@+id/locInfo_addrs_list"
+            android:layout_weight="3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        	android:padding="5dp"
+        	android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

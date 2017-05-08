@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="50dp"
+    android:background="@drawable/bg_im_menu">
+    <ImageView android:id="@+id/menu_divider" android:src="@drawable/public_menu_line"
+		android:layout_width="1dp" android:layout_height="50dp"
+		android:scaleType="fitXY"/>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="50dp">
+        <TextView android:id="@+id/menu_name" android:text="歌手简介"
+            style="@style/ts18_black_white_mw_50h"
+			android:singleLine="true" android:ellipsize="end"
+			android:gravity="center"/>
+	    <ImageView android:id="@+id/menu_more" android:src="@drawable/bg_im_menu_more"
+	        android:layout_gravity="right"
+			android:layout_width="wrap_content" android:layout_height="50dp"/>
+    </FrameLayout>
+</LinearLayout>
